@@ -2,6 +2,7 @@ import bodyParser from 'body-parser';
 import compression from 'compression';
 import dotenv from 'dotenv';
 import express from 'express';
+import expressValidator from 'express-validator';
 import lusca from 'lusca';
 import path from 'path';
 
@@ -49,7 +50,8 @@ app.set('view engine', 'pug');
 app.use(compression());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-// app.use(expressValidator());
+app.use(expressValidator());
+app.use(expressValidator());
 // app.use(
 //   session({
 //     resave: true,
@@ -70,6 +72,7 @@ app.use((req, res, next) => {
   // res.locals.user = req.user;
   next();
 });
+
 // app.use((req, res, next) => {
 //   // After successful login, redirect back to the intended page
 //   if (
