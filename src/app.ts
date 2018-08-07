@@ -2,16 +2,16 @@ import bodyParser from 'body-parser';
 import compression from 'compression';
 import dotenv from 'dotenv';
 import express from 'express';
-import flash from 'express-flash';
 import lusca from 'lusca';
 import path from 'path';
+
+import * as homeController from './controllers/home';
 
 // import session from 'express-session';
 // import expressValidator from 'express-validator';
 // import * as passportConfig from './config/passport';
 // import * as apiController from './controllers/api';
 // import * as contactController from './controllers/contact';
-// import * as homeController from './controllers/home';
 // import * as userController from './controllers/user';
 
 // const MongoStore = mongo(session);
@@ -63,7 +63,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // );
 // app.use(passport.initialize());
 // app.use(passport.session());
-app.use(flash());
+// app.use(flash());
 app.use(lusca.xframe('SAMEORIGIN'));
 app.use(lusca.xssProtection(true));
 app.use((req, res, next) => {
@@ -93,7 +93,7 @@ app.use(
 /**
  * Primary app routes.
  */
-// app.get('/', homeController.index);
+app.get('/', homeController.index);
 // app.get('/login', userController.getLogin);
 // app.post('/login', userController.postLogin);
 // app.get('/logout', userController.logout);
