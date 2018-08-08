@@ -8,7 +8,7 @@ class EmailAuthenticator {
   public async signin(email: string): Promise<boolean> {
     return new Promise<boolean>(async (resolve, reject) => {
       // 1. Register email in db.
-      const emailSigninToken = await User.newEmailSignin(email);
+      const emailSigninToken = await User.createEmailSigninToken(email);
       // throw Error('DB blew up!');
 
       // 2. Create job to send out mail.

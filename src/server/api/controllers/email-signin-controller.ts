@@ -3,7 +3,7 @@ import { NextFunction, Request, Response } from 'express';
 import { emailAuthenticator } from '../../business/auth/email';
 import logger from '../../util/logger';
 
-export const postEmailAuth = async (
+export const postEmailSignin = async (
   req: Request,
   res: Response,
   next: NextFunction

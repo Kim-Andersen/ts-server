@@ -4,7 +4,7 @@ import express, { Request, Response } from 'express';
 import expressValidator from 'express-validator';
 import lusca from 'lusca';
 
-import { postEmailAuth } from './controllers/email-auth-controller';
+import { postEmailSignin } from './controllers/email-signin-controller';
 
 // Configure the API router.
 const router = express.Router({ mergeParams: true });
@@ -16,7 +16,7 @@ router.use(lusca.xframe('SAMEORIGIN'));
 router.use(lusca.xssProtection(true));
 
 // Add controllers to the API router.
-router.post('/api/auth/email', postEmailAuth);
+router.post('/api/auth/email', postEmailSignin);
 
 // Wildcard route catcher.
 router.all('*', function(req, res) {

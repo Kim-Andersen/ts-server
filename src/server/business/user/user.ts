@@ -1,10 +1,10 @@
-export class EmailSigninToken {
-  constructor(public readonly email: string, public readonly token: string) {}
-}
+import { EmailSigninToken } from '../../../shared/contract/EmailSigninToken';
 
 class User {
-  public async newEmailSignin(email: string): Promise<EmailSigninToken> {
-    const token = this.generateEmailSigninToken();
+  public async createEmailSigninToken(
+    email: string
+  ): Promise<EmailSigninToken> {
+    const token = this.generateSecrectEmailSigninToken();
 
     return new Promise<EmailSigninToken>((resolve, reject) => {
       // Add to DB.
@@ -14,7 +14,7 @@ class User {
     });
   }
 
-  private generateEmailSigninToken(): string {
+  private generateSecrectEmailSigninToken(): string {
     return '43hktj3%tadas098OJAS';
   }
 }
