@@ -1,0 +1,494 @@
+{
+  ".gitignore": {
+    "mt": "Tue Aug 07 2018 18:58:26 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/.gitignore"
+  },
+  "coverage/clover.xml": {
+    "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/clover.xml"
+  },
+  "coverage/coverage-final.json": {
+    "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/coverage-final.json"
+  },
+  "coverage/lcov-report/app.ts.html": {
+    "mt": "Tue Aug 07 2018 19:36:52 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/app.ts.html"
+  },
+  "coverage/lcov-report/base.css": {
+    "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/base.css"
+  },
+  "coverage/lcov-report/block-navigation.js": {
+    "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/block-navigation.js"
+  },
+  "coverage/lcov-report/dist/app.js.html": {
+    "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/app.js.html"
+  },
+  "coverage/lcov-report/dist/controllers/home.js.html": {
+    "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/controllers/home.js.html"
+  },
+  "coverage/lcov-report/dist/controllers/index.html": {
+    "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/controllers/index.html"
+  },
+  "coverage/lcov-report/dist/index.html": {
+    "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/index.html"
+  },
+  "coverage/lcov-report/dist/util/index.html": {
+    "mt": "Tue Aug 07 2018 20:54:08 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/util/index.html"
+  },
+  "coverage/lcov-report/dist/util/queue/index.html": {
+    "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/util/queue/index.html"
+  },
+  "coverage/lcov-report/dist/util/queue/jobs.js.html": {
+    "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/util/queue/jobs.js.html"
+  },
+  "coverage/lcov-report/dist/util/queue/queue-manager.js.html": {
+    "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/util/queue/queue-manager.js.html"
+  },
+  "coverage/lcov-report/dist/util/queue/types.js.html": {
+    "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/util/queue/types.js.html"
+  },
+  "coverage/lcov-report/dist/util/queue.js.html": {
+    "mt": "Tue Aug 07 2018 20:54:08 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/util/queue.js.html"
+  },
+  "coverage/lcov-report/index.html": {
+    "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/index.html"
+  },
+  "coverage/lcov-report/prettify.css": {
+    "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/prettify.css"
+  },
+  "coverage/lcov-report/prettify.js": {
+    "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/prettify.js"
+  },
+  "coverage/lcov-report/sort-arrow-sprite.png": {
+    "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/sort-arrow-sprite.png"
+  },
+  "coverage/lcov-report/sorter.js": {
+    "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/sorter.js"
+  },
+  "coverage/lcov-report/src/app.ts.html": {
+    "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/app.ts.html"
+  },
+  "coverage/lcov-report/src/controllers/home.ts.html": {
+    "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/controllers/home.ts.html"
+  },
+  "coverage/lcov-report/src/controllers/index.html": {
+    "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/controllers/index.html"
+  },
+  "coverage/lcov-report/src/index.html": {
+    "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/index.html"
+  },
+  "coverage/lcov-report/src/util/index.html": {
+    "mt": "Tue Aug 07 2018 20:54:08 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/util/index.html"
+  },
+  "coverage/lcov-report/src/util/queue/index.html": {
+    "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/util/queue/index.html"
+  },
+  "coverage/lcov-report/src/util/queue/jobs.ts.html": {
+    "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/util/queue/jobs.ts.html"
+  },
+  "coverage/lcov-report/src/util/queue/queue-manager.ts.html": {
+    "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/util/queue/queue-manager.ts.html"
+  },
+  "coverage/lcov-report/src/util/queue/types.ts.html": {
+    "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/util/queue/types.ts.html"
+  },
+  "coverage/lcov-report/src/util/queue.ts.html": {
+    "mt": "Tue Aug 07 2018 20:54:08 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/util/queue.ts.html"
+  },
+  "coverage/lcov.info": {
+    "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov.info"
+  },
+  "debug.log": {
+    "mt": "Tue Aug 07 2018 19:53:38 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/debug.log"
+  },
+  "dist/app.js": {
+    "mt": "Wed Aug 08 2018 00:53:31 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/dist/app.js"
+  },
+  "dist/app.js.map": {
+    "mt": "Wed Aug 08 2018 00:53:31 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/dist/app.js.map"
+  },
+  "dist/app.test.js": {
+    "mt": "Wed Aug 08 2018 00:53:31 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/dist/app.test.js"
+  },
+  "dist/app.test.js.map": {
+    "mt": "Wed Aug 08 2018 00:53:31 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/dist/app.test.js.map"
+  },
+  "dist/controllers/home.js": {
+    "mt": "Wed Aug 08 2018 00:53:31 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/dist/controllers/home.js"
+  },
+  "dist/controllers/home.js.map": {
+    "mt": "Wed Aug 08 2018 00:53:31 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/dist/controllers/home.js.map"
+  },
+  "dist/controllers/home.test.js": {
+    "mt": "Wed Aug 08 2018 00:53:31 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/dist/controllers/home.test.js"
+  },
+  "dist/controllers/home.test.js.map": {
+    "mt": "Wed Aug 08 2018 00:53:31 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/dist/controllers/home.test.js.map"
+  },
+  "dist/public/css/main.css": {
+    "mt": "Wed Aug 08 2018 00:27:52 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/dist/public/css/main.css"
+  },
+  "dist/server.js": {
+    "mt": "Wed Aug 08 2018 00:53:31 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server.js"
+  },
+  "dist/server.js.map": {
+    "mt": "Wed Aug 08 2018 00:53:31 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server.js.map"
+  },
+  "dist/util/logger.js": {
+    "mt": "Wed Aug 08 2018 00:53:31 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/dist/util/logger.js"
+  },
+  "dist/util/logger.js.map": {
+    "mt": "Wed Aug 08 2018 00:53:31 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/dist/util/logger.js.map"
+  },
+  "dist/util/queue/index.js": {
+    "mt": "Tue Aug 07 2018 22:08:56 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/dist/util/queue/index.js"
+  },
+  "dist/util/queue/index.js.map": {
+    "mt": "Tue Aug 07 2018 22:08:56 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/dist/util/queue/index.js.map"
+  },
+  "dist/util/queue/job-types.js": {
+    "mt": "Tue Aug 07 2018 21:12:49 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/dist/util/queue/job-types.js"
+  },
+  "dist/util/queue/job-types.js.map": {
+    "mt": "Tue Aug 07 2018 21:12:49 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/dist/util/queue/job-types.js.map"
+  },
+  "dist/util/queue/jobs.js": {
+    "mt": "Wed Aug 08 2018 00:53:31 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/dist/util/queue/jobs.js"
+  },
+  "dist/util/queue/jobs.js.map": {
+    "mt": "Wed Aug 08 2018 00:53:31 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/dist/util/queue/jobs.js.map"
+  },
+  "dist/util/queue/queue-manager.js": {
+    "mt": "Wed Aug 08 2018 00:53:31 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/dist/util/queue/queue-manager.js"
+  },
+  "dist/util/queue/queue-manager.js.map": {
+    "mt": "Wed Aug 08 2018 00:53:31 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/dist/util/queue/queue-manager.js.map"
+  },
+  "dist/util/queue/queue.js": {
+    "mt": "Tue Aug 07 2018 21:14:54 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/dist/util/queue/queue.js"
+  },
+  "dist/util/queue/queue.js.map": {
+    "mt": "Tue Aug 07 2018 21:14:54 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/dist/util/queue/queue.js.map"
+  },
+  "dist/util/queue/types.js": {
+    "mt": "Wed Aug 08 2018 00:53:31 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/dist/util/queue/types.js"
+  },
+  "dist/util/queue/types.js.map": {
+    "mt": "Wed Aug 08 2018 00:53:31 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/dist/util/queue/types.js.map"
+  },
+  "dist/util/queue.js": {
+    "mt": "Tue Aug 07 2018 21:10:07 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/dist/util/queue.js"
+  },
+  "dist/util/queue.js.map": {
+    "mt": "Tue Aug 07 2018 21:10:07 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/dist/util/queue.js.map"
+  },
+  "dist/worker.js": {
+    "mt": "Wed Aug 08 2018 00:53:31 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/dist/worker.js"
+  },
+  "dist/worker.js.map": {
+    "mt": "Wed Aug 08 2018 00:53:31 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/dist/worker.js.map"
+  },
+  "documentation/redis.md": {
+    "mt": "Tue Aug 07 2018 20:29:31 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/documentation/redis.md"
+  },
+  "ecosystem.config.js": {
+    "mt": "Wed Aug 08 2018 00:08:46 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/ecosystem.config.js"
+  },
+  "jest.config.js": {
+    "mt": "Tue Aug 07 2018 18:54:14 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/jest.config.js"
+  },
+  "package.json": {
+    "mt": "Wed Aug 08 2018 00:53:29 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/package.json"
+  },
+  "scripts/copyStaticAssets.ts": {
+    "mt": "Tue Aug 07 2018 18:40:39 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/scripts/copyStaticAssets.ts"
+  },
+  "src/app.test.ts": {
+    "mt": "Tue Aug 07 2018 21:31:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/src/app.test.ts"
+  },
+  "src/app.ts": {
+    "mt": "Tue Aug 07 2018 20:38:50 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/src/app.ts"
+  },
+  "src/controllers/home.test.ts": {
+    "mt": "Tue Aug 07 2018 20:53:42 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/src/controllers/home.test.ts"
+  },
+  "src/controllers/home.ts": {
+    "mt": "Tue Aug 07 2018 22:25:08 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/src/controllers/home.ts"
+  },
+  "src/public/css/main.scss": {
+    "mt": "Tue Aug 07 2018 18:49:35 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/src/public/css/main.scss"
+  },
+  "src/server.ts": {
+    "mt": "Tue Aug 07 2018 18:47:00 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/src/server.ts"
+  },
+  "src/util/logger.ts": {
+    "mt": "Tue Aug 07 2018 19:53:36 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/src/util/logger.ts"
+  },
+  "src/util/queue/jobs.ts": {
+    "mt": "Tue Aug 07 2018 22:00:48 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/src/util/queue/jobs.ts"
+  },
+  "src/util/queue/queue-manager.ts": {
+    "mt": "Tue Aug 07 2018 22:17:50 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/src/util/queue/queue-manager.ts"
+  },
+  "src/util/queue/types.ts": {
+    "mt": "Tue Aug 07 2018 21:30:14 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/src/util/queue/types.ts"
+  },
+  "src/worker.ts": {
+    "mt": "Wed Aug 08 2018 00:06:55 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/src/worker.ts"
+  },
+  "tsconfig.json": {
+    "mt": "Wed Aug 08 2018 00:53:30 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/tsconfig.json"
+  },
+  "tslint.json": {
+    "mt": "Tue Aug 07 2018 18:38:51 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/tslint.json"
+  },
+  "yarn-error.log": {
+    "mt": "Tue Aug 07 2018 18:29:01 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/yarn-error.log"
+  },
+  "yarn.lock": {
+    "mt": "Tue Aug 07 2018 20:30:30 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 1,
+    "path": "/Users/kimandersen/projects/ts-server/yarn.lock"
+  }
+}

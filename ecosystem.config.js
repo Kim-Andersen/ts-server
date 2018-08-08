@@ -2,9 +2,9 @@ module.exports = {
   apps: [
     {
       name: 'app',
-      script: 'dist/server.js',
+      script: 'dist/server/index.js',
       instances: 1,
-      watch: true,
+      watch: './dist',
       env: {
         NODE_ENV: 'development'
       },
@@ -14,9 +14,9 @@ module.exports = {
     },
     {
       name: 'worker',
-      script: 'dist/worker.js',
+      script: 'dist/server/worker.js',
       instances: 1,
-      watch: true,
+      watch: './dist',
       env: {
         NODE_ENV: 'development'
       },
