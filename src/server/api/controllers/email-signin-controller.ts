@@ -23,7 +23,7 @@ export const postEmailSignin = async (
     result = await emailAuthenticator.signin(email);
   } catch (err) {
     logger.error('API failed to register an email auth job');
-    next(err);
+    return next(err);
   }
 
   if (result === true) {
