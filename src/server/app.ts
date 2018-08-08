@@ -6,6 +6,7 @@ import expressValidator from 'express-validator';
 import lusca from 'lusca';
 import path from 'path';
 
+import apiRouter from './api/api-router';
 import * as homeController from './controllers/home';
 
 // import session from 'express-session';
@@ -51,7 +52,7 @@ app.use(compression());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(expressValidator());
-app.use(expressValidator());
+
 // app.use(
 //   session({
 //     resave: true,
@@ -133,7 +134,9 @@ app.get('/', homeController.index);
 /**
  * API examples routes.
  */
-// app.get('/api', apiController.getApi);
+
+app.use(apiRouter);
+
 // app.get(
 //   '/api/facebook',
 //   passportConfig.isAuthenticated,
