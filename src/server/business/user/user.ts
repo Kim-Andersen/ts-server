@@ -1,10 +1,12 @@
+import crypto from 'crypto';
+
 import { EmailSigninToken } from '../../../shared/contract/EmailSigninToken';
 
 class User {
   public async createEmailSigninToken(
     email: string
   ): Promise<EmailSigninToken> {
-    const token = this.generateSecrectEmailSigninToken();
+    const token = this.generateRandomHexString();
 
     return new Promise<EmailSigninToken>((resolve, reject) => {
       // Add to DB.
@@ -14,8 +16,9 @@ class User {
     });
   }
 
-  private generateSecrectEmailSigninToken(): string {
-    return '43hktj3%tadas098OJAS';
+  private generateRandomHexString(numBytes = 20): string {
+    const buffer = crypto.randomBytes(numBytes);
+    return buffer.toString('hex');
   }
 }
 

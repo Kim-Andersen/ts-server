@@ -1,4 +1,4 @@
-import { EmailSigninToken } from '../../business/user/user';
+import { EmailSigninToken } from '../../../shared/contract/EmailSigninToken';
 import { QueueJob, QueueJobType } from './types';
 
 class SendEmailSigninMail implements QueueJob {
