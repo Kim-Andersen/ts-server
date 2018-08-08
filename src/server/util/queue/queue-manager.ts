@@ -21,15 +21,15 @@ class QueueManager {
     });
   }
 
-  public create(queueJobDep: QueueJob): Job {
-    console.log('QueueManager.create', queueJobDep.type.toString());
+  public create(queueJob: QueueJob): Job {
+    console.log('QueueManager.create', queueJob.type.toString());
     const job: Job = this.queue
-      .create(queueJobDep.type, queueJobDep.data)
+      .create(queueJob.type, queueJob.data)
       .save((err: any) => {
-        if (err) {
-          console.log('Succesfully created job', queueJobDep);
+        if (!err) {
+          console.log('Succesfully created job', queueJob);
         } else {
-          console.error('Failed to create job.', queueJobDep, err);
+          console.error('Failed to create job.', queueJob, err);
         }
       });
 

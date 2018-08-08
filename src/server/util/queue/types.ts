@@ -1,5 +1,5 @@
 export enum QueueJobType {
-  WelcomeHome = 'Welcome Home'
+  SendEmailSigninMail = 'SendEmailSigninMail'
 }
 
 export interface QueueJob {
