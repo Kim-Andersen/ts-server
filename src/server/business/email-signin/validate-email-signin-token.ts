@@ -1,5 +1,4 @@
-import { EmailSigninToken } from '../../../shared/contract/EmailSigninToken';
-import knex from '../../db/knex';
+import { EmailSigninModel } from '../../db/models';
 import logger from '../../util/logger';
 
 function hasExpired(expiresAt: Date): boolean {
@@ -8,30 +7,28 @@ function hasExpired(expiresAt: Date): boolean {
 
 export default async function validateEmailSigninToken(
   token: string
-): Promise<EmailSigninToken> {
+): Promise<EmailSigninModel> {
   if (!token) throw Error('token is required');
+  logger.info(`Validating EmailSignin token ${token}.`);
 
-  return new Promise<EmailSigninToken>(async (resolve, reject) => {
+  return new Promise<EmailSigninModel>(async (resolve, reject) => {
     // Fetch and validate the db entry.
     try {
-      const emailSigninToken: EmailSigninToken = await knex
-        .first()
-        .from('email_signin')
-        .where({ token })
-        .select('*');
+      const emailSigninToken = await new EmailSigninModel().fetchByToken(token);
 
       if (!emailSigninToken) {
+        logger.info(`EmailSignin not found for token ${token}.`);
         resolve();
       } else {
         // Delete the entry.
-        await knex('email_signin')
-          .where({ id: emailSigninToken.id })
-          .del();
+        await emailSigninToken.destroy();
 
-        if (hasExpired(emailSigninToken.expiresAt)) {
-          return resolve();
-        } else {
+        if (emailSigninToken.isValid()) {
+          logger.info(`Valid EmailSignin found for token ${token}.`);
           return resolve(emailSigninToken);
+        } else {
+          logger.info(`EmailSignin expired for token ${token}.`);
+          return resolve();
         }
       }
     } catch (error) {

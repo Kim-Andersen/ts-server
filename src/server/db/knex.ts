@@ -10,7 +10,8 @@ const knex = knexConfig({
   connection: POSTGRES_URL + (NODE_ENV === 'production' ? '?ssl=true' : ''),
   // ssl: process.env.NODE_ENV === 'production',
   // debug: (process.env.NODE_ENV !== 'production'),
-  searchPath: ['knex', 'public']
+  searchPath: ['knex', 'public'],
+  debug: false
 });
 
 // const knexPostgis = require("knex-postgis")(knex);

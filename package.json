@@ -23,10 +23,14 @@
     "watch-debug": "concurrently -k -p \"[{name}]\" -n \"Sass,TypeScript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-sass\" \"npm run watch-ts\" \"npm run serve-debug\""
   },
   "dependencies": {
+    "@types/bluebird": "3.5.23",
+    "@types/bookshelf": "0.9.9",
     "@types/lodash": "4.14.116",
     "@types/moment": "2.13.0",
     "bcrypt-nodejs": "0.0.3",
+    "bluebird": "3.5.1",
     "body-parser": "1.18.3",
+    "bookshelf": "0.13.3",
     "compression": "1.7.3",
     "crypto": "1.0.1",
     "dotenv": "6.0.0",

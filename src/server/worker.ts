@@ -1,7 +1,7 @@
 import { DoneCallback, Job } from 'kue';
 
+import { QueueJobType } from './util/queue/queue-job-type';
 import queueManager from './util/queue/queue-manager';
-import { QueueJobType } from './util/queue/types';
 
 queueManager.process(
   QueueJobType.SendEmailSigninMail,

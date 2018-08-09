@@ -1,8 +1,7 @@
 import { NextFunction, Request, Response } from 'express';
 
 import HttpStatusCode from '../../../shared/http-status-codes';
-import { emailAuthenticator } from '../../business/auth/email';
-import User from '../../business/user';
+import EmailSignin from '../../business/email-signin';
 import logger from '../../util/logger';
 
 export const postEmailSignin = async (
@@ -21,7 +20,7 @@ export const postEmailSignin = async (
   const email = req.body.email;
 
   try {
-    await emailAuthenticator.signin(email);
+    await EmailSignin.createEmailSigninToken(email);
     return res.status(HttpStatusCode.OK).json({
       email,
       message: `We just emailed a confirmation link to ${email}. Click the link, and you’ll be signed in.`
@@ -44,7 +43,7 @@ export const getValidateEmailSigninToken = async (
   }
 
   const token = req.query.token;
-  const emailSigninToken = await User.validateEmailSigninToken(token);
+  const emailSigninToken = await EmailSignin.validateEmailSigninToken(token);
 
   if (emailSigninToken) {
     return res.status(HttpStatusCode.OK).json({

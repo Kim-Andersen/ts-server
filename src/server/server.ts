@@ -1,7 +1,10 @@
+import bluebird from 'bluebird';
 import errorHandler from 'errorHandler';
 
 import app from './app';
 import { validateEnvironment } from './util/env';
+
+global.Promise = bluebird;
 
 validateEnvironment();
 
