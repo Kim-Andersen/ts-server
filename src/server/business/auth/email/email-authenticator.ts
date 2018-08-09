@@ -1,7 +1,7 @@
 import { EmailSigninToken } from '../../../../shared/contract/EmailSigninToken';
 import logger from '../../../util/logger';
 import { queue, queueJob } from '../../../util/queue';
-import { User } from '../../user';
+import User from '../../user';
 
 // import queueManager from '../../../util/queue/queue-manager';
 class EmailAuthenticator {
