@@ -1,7 +1,7 @@
-export default {
+module.exports = {
   development: {
-    client: 'postgresql'
-    // connection: 'postgres://localhost:5432/ts-server'
+    client: 'postgresql',
+    connection: 'postgres://localhost:5432/ts-server-dev'
   }
 
   // test: {
