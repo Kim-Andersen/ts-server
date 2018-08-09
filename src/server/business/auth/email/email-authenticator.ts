@@ -1,9 +1,7 @@
-import { Job } from 'kue';
-
-import queueJob from '../../../util/queue/jobs';
-import queueManager from '../../../util/queue/queue-manager';
+import { queue, queueJob } from '../../../util/queue';
 import { User } from '../../user';
 
+// import queueManager from '../../../util/queue/queue-manager';
 class EmailAuthenticator {
   public async signin(email: string): Promise<boolean> {
     return new Promise<boolean>(async (resolve, reject) => {
@@ -12,7 +10,7 @@ class EmailAuthenticator {
       // throw Error('DB blew up!');
 
       // 2. Create job to send out mail.
-      const job: Job = queueManager
+      queue
         .create(new queueJob.sendEmailSigninMail(emailSigninToken))
         .save((err: any) => {
           if (!err) {

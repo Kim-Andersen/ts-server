@@ -2,8 +2,6 @@ import errorHandler from 'errorHandler';
 
 import app from './app';
 
-// import errorHandler from 'errorhandler';
-
 /**
  * Error Handler. Provides full stack - remove for production
  */
