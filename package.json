@@ -23,6 +23,7 @@
     "watch-debug": "concurrently -k -p \"[{name}]\" -n \"Sass,TypeScript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-sass\" \"npm run watch-ts\" \"npm run serve-debug\""
   },
   "dependencies": {
+    "@types/lodash": "4.14.116",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "1.18.3",
     "compression": "1.7.3",
@@ -32,8 +33,11 @@
     "express": "4.16.0",
     "express-flash": "0.0.2",
     "express-validator": "5.3.0",
+    "knex": "0.15.2",
     "kue": "0.11.6",
+    "lodash": "4.17.10",
     "lusca": "1.6.1",
+    "pg": "7.4.3",
     "pug": "2.0.3",
     "typescript": "3.0.1",
     "winston": "3.0.0"
@@ -46,6 +50,7 @@
     "@types/express": "4.16.0",
     "@types/express-flash": "0.0.0",
     "@types/jest": "23.3.1",
+    "@types/knex": "0.14.20",
     "@types/kue": "0.11.9",
     "@types/lusca": "1.5.0",
     "@types/node": "10.5.7",

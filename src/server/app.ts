@@ -1,6 +1,5 @@
 import bodyParser from 'body-parser';
 import compression from 'compression';
-import dotenv from 'dotenv';
 import express from 'express';
 import expressValidator from 'express-validator';
 import lusca from 'lusca';
@@ -17,9 +16,6 @@ import * as homeController from './controllers/home';
 // import * as userController from './controllers/user';
 
 // const MongoStore = mongo(session);
-
-// Load environment variables from .env file, where API keys and passwords are configured
-dotenv.config({ path: '.env.example' });
 
 // Controllers (route handlers)
 // API keys and Passport configuration
@@ -45,7 +41,7 @@ const app = express();
 //   });
 
 // Express configuration
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT);
 app.set('views', path.join(__dirname, '../views'));
 app.set('view engine', 'pug');
 app.use(compression());

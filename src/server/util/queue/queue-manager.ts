@@ -1,5 +1,6 @@
 import kue, { DoneCallback, Job, Queue } from 'kue';
 
+import { REDIS_HOST, REDIS_PORT } from '../env';
 import { QueueJob, QueueJobType } from './types';
 
 class QueueManager {
@@ -10,8 +11,8 @@ class QueueManager {
     this.queue = kue.createQueue({
       prefix: 'q',
       redis: {
-        port: 6379,
-        host: '127.0.0.1'
+        port: REDIS_PORT,
+        host: REDIS_HOST
         // auth: 'password',
         // db: 3, // if provided select a non-default redis db
         // options: {

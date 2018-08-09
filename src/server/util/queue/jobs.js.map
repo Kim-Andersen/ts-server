@@ -1,1 +1,0 @@
-{"version":3,"file":"jobs.js","sourceRoot":"","sources":["jobs.ts"],"names":[],"mappings":";;AACA,mCAAiD;AAEjD,MAAM,mBAAmB;IAEvB,YAA4B,IAAsB;QAAtB,SAAI,GAAJ,IAAI,CAAkB;QADlC,SAAI,GAAiB,oBAAY,CAAC,mBAAmB,CAAC;IACjB,CAAC;CACvD;AAED,MAAM,QAAQ,GAAG;IACf,mBAAmB,EAAE,mBAAmB;CACzC,CAAC;AAEF,kBAAe,QAAQ,CAAC"}
