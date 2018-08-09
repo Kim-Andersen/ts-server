@@ -36,7 +36,7 @@ class QueueManager {
 
     job
       .on('complete', (result: any) => {
-        console.log('Job completed!', result);
+        console.log(`Job completed`, result);
       })
       .on('failed', (errorMessage: any) => {
         console.log('Job failed :(', errorMessage);

@@ -1,3 +1,5 @@
+import { EmailSigninToken } from '../../../../shared/contract/EmailSigninToken';
+import logger from '../../../util/logger';
 import { queue, queueJob } from '../../../util/queue';
 import { User } from '../../user';
 
@@ -6,8 +8,16 @@ class EmailAuthenticator {
   public async signin(email: string): Promise<boolean> {
     return new Promise<boolean>(async (resolve, reject) => {
       // 1. Register email in db.
-      const emailSigninToken = await User.createEmailSigninToken(email);
-      // throw Error('DB blew up!');
+      let emailSigninToken: EmailSigninToken;
+      try {
+        emailSigninToken = await User.createEmailSigninToken(email);
+      } catch (error) {
+        logger.error(
+          `Failed to create an email signin token for ${email}.`,
+          error
+        );
+        return reject(error);
+      }
 
       // 2. Create job to send out mail.
       queue
@@ -16,7 +26,11 @@ class EmailAuthenticator {
           if (!err) {
             resolve(true);
           } else {
-            reject();
+            logger.error(
+              `Failed to create sendEmailSigninMail job for ${email}.`,
+              err
+            );
+            reject(err);
           }
         });
     });

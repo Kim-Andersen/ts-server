@@ -1,16 +1,16 @@
-// @flow
 import knexConfig from 'knex';
 
 import { NODE_ENV, POSTGRES_URL } from '../util/env';
 
+// @flow
 // const debug = require("debug")("business:db:knex");
-export const knex = knexConfig({
+const knex = knexConfig({
   client: 'pg',
   // connection: { database: 'kiddo_test', user: 'superuser' },
   connection: POSTGRES_URL + (NODE_ENV === 'production' ? '?ssl=true' : ''),
   // ssl: process.env.NODE_ENV === 'production',
   // debug: (process.env.NODE_ENV !== 'production'),
-  searchPath: 'knex,public'
+  searchPath: ['knex', 'public']
 });
 
 // const knexPostgis = require("knex-postgis")(knex);
@@ -55,3 +55,5 @@ process.on('SIGTERM', function() {
 // }
 
 // exports.knexPostgis = knexPostgis;
+
+export default knex;
