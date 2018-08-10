@@ -2,6 +2,7 @@ import { NextFunction, Request, Response } from 'express';
 
 import HttpStatusCode from '../../../shared/http-status-codes';
 import EmailSignin from '../../business/email-signin';
+import { EmailSigninModel } from '../../db/models';
 import logger from '../../util/logger';
 
 export const postEmailSignin = async (
@@ -31,28 +32,41 @@ export const postEmailSignin = async (
   }
 };
 
-export const getValidateEmailSigninToken = async (
+export const getValidateEmailSigninToken = (
   req: Request,
-  res: Response
-) => {
+  res: Response,
+  next: NextFunction
+): void => {
   req.assert('token', 'Token is not valid').isString();
 
   const validationErrors = req.validationErrors();
   if (validationErrors) {
-    return res.status(HttpStatusCode.BadRequest).send(validationErrors);
+    res.status(HttpStatusCode.BadRequest).send(validationErrors);
   }
 
   const token = req.query.token;
-  const emailSigninToken = await EmailSignin.validateEmailSigninToken(token);
 
-  if (emailSigninToken) {
-    return res.status(HttpStatusCode.OK).json({
-      email: emailSigninToken.email,
-      message: 'Token is valid and is now deleted from the db.'
+  EmailSignin.validateEmailSigninToken(token)
+    .then((emailSigninModel: EmailSigninModel) => {
+      return res.status(HttpStatusCode.OK).json({
+        email: emailSigninModel.email,
+        message: 'Token is valid and is now deleted from the db.'
+      });
+    })
+    .catch(EmailSigninModel.NotFoundError, function emailSigninNotFound() {
+      logger.info(`EmailSignin token not found`, { token });
+      return res.status(HttpStatusCode.Unauthorized).json({
+        message: `No email signin token found. Please sign in again.`
+      });
+    })
+    .catch(EmailSigninModel.TokenExpiredError, function tokenExpiredError(err) {
+      logger.info(`EmailSignin token expired`, { token }, err);
+      return res.status(HttpStatusCode.NotFound).json({
+        message: 'Your email signin expired. Please sign in again.'
+      });
+    })
+    .catch(function errorValidatingEmailSigninToken(err: any) {
+      logger.error(`EmailSignin validation failed.`, { token }, err);
+      return next(err);
     });
-  } else {
-    return res.status(HttpStatusCode.Unauthorized).json({
-      message: 'Token has expiried or is invalid. Please log in again.'
-    });
-  }
 };

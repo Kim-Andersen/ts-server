@@ -10,16 +10,14 @@ const _queue = kue.createQueue({
   redis: {
     port: REDIS_PORT,
     host: REDIS_HOST
-    // auth: 'password',
-    // db: 3, // if provided select a non-default redis db
-    // options: {
-    //   // see https://github.com/mranney/node_redis#rediscreateclient
-    // }
   }
 });
 
 const _Queue = {
-  create: Promise.method(function(type: QueueJobType, data: any) {
+  create: Promise.method(function createQueueJob(
+    type: QueueJobType,
+    data: any
+  ) {
     const job: Job = _queue.create(type, data).save((err: any) => {
       if (!err) {
         logger.info('Succesfully created job', type, data);
@@ -28,6 +26,26 @@ const _Queue = {
         throw err;
       }
     });
+
+    job
+      .on('complete', (result: any) => {
+        logger.info(`Job completed: ${type}`, data);
+      })
+      .on('failed', (errorMessage: any) => {
+        logger.error(`Job failed: ${type}`, data, errorMessage);
+      })
+      .on('failed attempt', (errorMessage: any, doneAttempts: any) => {
+        logger.warn(
+          'Job attempt failed: ${type}',
+          data,
+          errorMessage,
+          doneAttempts
+        );
+      })
+      .on('progress', (progress: any, data: any) => {
+        logger.info(`Job in progres: ${type}`, progress, data);
+      });
+
     return job;
   }),
 
