@@ -1,11 +1,13 @@
-import Promise from 'bluebird';
 import crypto from 'crypto';
 import moment from 'moment';
 
 import { EMAIL_SIGNIN_TOKEN_TIMEOUT_MINUTES } from '../../../shared/config';
 import bookshelf from '../bookshelf';
+import UserModel from './user';
 
-export class EmailSigninModel extends bookshelf.Model<EmailSigninModel> {
+export default class EmailSigninModel extends bookshelf.Model<
+  EmailSigninModel
+> {
   static TokenExpiredError = Error('Token has expired');
   /**
    * Checks if the token expired.
@@ -17,8 +19,8 @@ export class EmailSigninModel extends bookshelf.Model<EmailSigninModel> {
     );
   }
 
-  public fetchByToken(token: string): Promise<EmailSigninModel> {
-    return this.where({ token }).fetch({ require: true });
+  public user() {
+    return this.belongsTo(UserModel);
   }
 
   get tableName() {
@@ -26,6 +28,10 @@ export class EmailSigninModel extends bookshelf.Model<EmailSigninModel> {
   }
   get hasTimestamps() {
     return true;
+  }
+
+  public get userId(): number {
+    return this.get('user_id');
   }
 
   public get email(): string {

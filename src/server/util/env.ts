@@ -6,11 +6,12 @@ import logger from './logger';
 // Load environment variables from .env file, where API keys and passwords are configured
 dotenv.config({ path: '.env.development' });
 
-export const NODE_ENV = process.env.NODE_ENV;
+export const NODE_ENV = process.env.NODE_ENV!;
 export const PORT = parseInt(process.env.PORT!, 10);
-export const POSTGRES_URL = process.env.POSTGRES_URL;
-export const REDIS_HOST = process.env.REDIS_HOST;
+export const POSTGRES_URL = process.env.POSTGRES_URL!;
+export const REDIS_HOST = process.env.REDIS_HOST!;
 export const REDIS_PORT = parseInt(process.env.REDIS_PORT!, 10);
+export const SESSION_SECRET = process.env.SESSION_SECRET!;
 
 function isEmptyString(value: any): boolean {
   return !isString(value) || isEmpty(value);
@@ -45,6 +46,12 @@ export function validateEnvironment(): void {
   if (!REDIS_PORT || !isNumber(REDIS_PORT)) {
     logger.error(
       'No REDIS_PORT number found. Set REDIS_PORT environment variable.'
+    );
+    exit = true;
+  }
+  if (isEmptyString(SESSION_SECRET)) {
+    logger.error(
+      'No SESSION_SECRET string found. Set SESSION_SECRET environment variable.'
     );
     exit = true;
   }

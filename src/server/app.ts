@@ -6,6 +6,8 @@ import lusca from 'lusca';
 import path from 'path';
 
 import apiRouter from './api/api-router';
+import configureSession from './configure-session';
+import emailSigninCallbackController from './controllers/email-signin-callback';
 import * as homeController from './controllers/home';
 
 // import session from 'express-session';
@@ -48,6 +50,10 @@ app.use(compression());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(expressValidator());
+
+configureSession(app);
+
+// Session store.
 
 // app.use(
 //   session({
@@ -94,6 +100,9 @@ app.use(
  * Primary app routes.
  */
 app.get('/', homeController.index);
+
+app.get('/callback/email', emailSigninCallbackController);
+
 // app.get('/login', userController.getLogin);
 // app.post('/login', userController.postLogin);
 // app.get('/logout', userController.logout);
