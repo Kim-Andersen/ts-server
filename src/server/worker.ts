@@ -1,5 +1,6 @@
 import { DoneCallback, Job } from 'kue';
 
+import EmailSignin from './business/email-signin';
 import logger from './util/logger';
 import { queue } from './util/queue';
 import { QueueJobType } from './util/queue/queue-job-type';
@@ -15,6 +16,12 @@ queue.process(
       }...`,
       job.data
     );
-    setTimeout(() => done(undefined, job.data), 1000);
+
+    EmailSignin.sendEmailSigninMail(job.data.userId)
+      .then(result => {
+        logger.debug(`sendEmailSigninMail result`, result);
+        done(undefined, job.data);
+      })
+      .catch((err: any) => done(err));
   }
 );

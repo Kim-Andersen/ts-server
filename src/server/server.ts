@@ -18,9 +18,9 @@ if (app.get('env') === 'development') {
 export default function server(): void {
   const server = app.listen(app.get('port'), () => {
     console.log(
-      `App is running on PID ${process.pid} at ${ROOT_URL}:${app.get(
-        'port'
-      )} in ${app.get('env')} mode`
+      `App is running on PID ${process.pid} at ${ROOT_URL} in ${app.get(
+        'env'
+      )} mode`
     );
     console.log('  Press CTRL-C to stop\n');
   });

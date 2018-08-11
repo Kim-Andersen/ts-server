@@ -4,7 +4,7 @@
   "author": "Kim Andersen",
   "license": "MIT",
   "scripts": {
-    "start": "npm run pm2 start ./pm2/pm2.development.config.json",
+    "start": "npm run serve",
     "start-runtime": "npm run pm2-runtime start pm2/pm2.production.config.json",
     "build": "npm run build-sass && npm run build-ts && npm run tslint && npm run copy-static-assets",
     "serve": "node dist/server/start.js",
@@ -31,6 +31,7 @@
     "nc-deploy-rebuild": "nc deploy -i ts-server -cmd start-runtime --rebuild"
   },
   "dependencies": {
+    "@sendgrid/mail": "6.3.1",
     "bcrypt-nodejs": "0.0.3",
     "bluebird": "3.5.1",
     "body-parser": "1.18.3",

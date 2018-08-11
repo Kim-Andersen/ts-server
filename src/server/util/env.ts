@@ -1,5 +1,5 @@
 import dotenv from 'dotenv';
-import { isEmpty, isNumber, isString } from 'lodash';
+import { isEmpty, isString } from 'lodash';
 
 import logger from './logger';
 
@@ -12,51 +12,25 @@ export const PORT = parseInt(process.env.PORT!, 10);
 export const POSTGRES_URL = process.env.POSTGRES_URL!;
 export const REDIS_URL = process.env.REDIS_URL!;
 export const SESSION_SECRET = process.env.SESSION_SECRET!;
+export const SENDGRID_API_KEY = process.env.SENDGRID_API_KEY!;
 
-function isEmptyString(value: any): boolean {
-  return !isString(value) || isEmpty(value);
-}
+const requiredVariables = [
+  'PORT',
+  'NODE_ENV',
+  'ROOT_URL',
+  'POSTGRES_URL',
+  'REDIS_URL',
+  'SESSION_SECRET',
+  'SENDGRID_API_KEY'
+];
 
-// Validation.
 export function validateEnvironment(): void {
-  let exit = false;
-
-  if (isEmptyString(ROOT_URL)) {
-    logger.error(
-      'No ROOT_URL string found. Set ROOT_URL environment variable.'
-    );
-    exit = true;
-  }
-  if (isEmptyString(NODE_ENV)) {
-    logger.error(
-      'No NODE_ENV string found. Set NODE_ENV environment variable.'
-    );
-    exit = true;
-  }
-  if (!PORT || !isNumber(PORT)) {
-    logger.error('No PORT number found. Set PORT environment variable.');
-    exit = true;
-  }
-  if (isEmptyString(POSTGRES_URL)) {
-    logger.error(
-      'No POSTGRES_URL string found. Set POSTGRES_URL environment variable.'
-    );
-    exit = true;
-  }
-  if (isEmptyString(REDIS_URL)) {
-    logger.error(
-      'No REDIS_URL string found. Set REDIS_URL environment variable.'
-    );
-    exit = true;
-  }
-  if (isEmptyString(SESSION_SECRET)) {
-    logger.error(
-      'No SESSION_SECRET string found. Set SESSION_SECRET environment variable.'
-    );
-    exit = true;
-  }
-
-  if (exit) {
-    process.exit(1);
-  }
+  requiredVariables.forEach(key => {
+    if (!isString(process.env[key]) || isEmpty(process.env[key])) {
+      logger.error(
+        `Critial: Missing required environment variable ${key} (string). Killing process.`
+      );
+      process.exit(1);
+    }
+  });
 }

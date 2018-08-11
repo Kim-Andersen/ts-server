@@ -25,7 +25,7 @@ const _Queue = {
     });
 
     job
-      .on('complete', (result: any) => {
+      .on('complete', () => {
         logger.info(`Job completed: ${type}`);
       })
       .on('failed', (errorMessage: any) => {

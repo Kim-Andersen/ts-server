@@ -4,7 +4,9 @@ import { queue, QueueJobType } from '../../util/queue';
 
 function createSendEmailSigninJob(emailSigninModel: EmailSigninModel) {
   return queue
-    .create(QueueJobType.SendEmailSigninMail, emailSigninModel.toJSON())
+    .create(QueueJobType.SendEmailSigninMail, {
+      userId: emailSigninModel.userId
+    })
     .then(() => emailSigninModel);
 }
 
