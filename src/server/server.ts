@@ -1,7 +1,7 @@
 import errorHandler from 'errorhandler';
 
 import app from './app';
-import { validateEnvironment } from './util/env';
+import { ROOT_URL, validateEnvironment } from './util/env';
 
 validateEnvironment();
 
@@ -15,13 +15,13 @@ if (app.get('env') === 'development') {
 /**
  * Start Express server.
  */
-const server = app.listen(app.get('port'), () => {
-  console.log(
-    '  App is running at http://localhost:%d in %s mode',
-    app.get('port'),
-    app.get('env')
-  );
-  console.log('  Press CTRL-C to stop\n');
-});
-
-export default server;
+export default function server(): void {
+  const server = app.listen(app.get('port'), () => {
+    console.log(
+      `App is running on PID ${process.pid} at ${ROOT_URL}:${app.get(
+        'port'
+      )} in ${app.get('env')} mode`
+    );
+    console.log('  Press CTRL-C to stop\n');
+  });
+}

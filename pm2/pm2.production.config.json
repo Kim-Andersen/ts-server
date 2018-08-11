@@ -1,0 +1,14 @@
+{
+  "apps": [
+    {
+      "name": "app",
+      "script": "dist/server/start.js",
+      "instances": 2
+    },
+    {
+      "name": "worker",
+      "script": "dist/server/worker.js",
+      "instances": 2
+    }
+  ]
+}

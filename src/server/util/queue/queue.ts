@@ -17,16 +17,16 @@ const _Queue = {
   ) {
     const job: Job = _queue.create(type, data).save((err: any) => {
       if (!err) {
-        logger.info('Succesfully created job', type, data);
+        logger.info(`Succesfully created job: ${type}`);
       } else {
-        logger.error('Failed to create job.', type, data, err);
+        logger.error(`Failed to create job: ${type}`, data, err);
         throw err;
       }
     });
 
     job
       .on('complete', (result: any) => {
-        logger.info(`Job completed: ${type}`, data);
+        logger.debug(`Job completed: ${type}`);
       })
       .on('failed', (errorMessage: any) => {
         logger.error(`Job failed: ${type}`, data, errorMessage);
@@ -40,7 +40,7 @@ const _Queue = {
         );
       })
       .on('progress', (progress: any, data: any) => {
-        logger.info(`Job in progres: ${type}`, progress, data);
+        logger.info(`Job in progres: ${type}`, progress);
       });
 
     return job;

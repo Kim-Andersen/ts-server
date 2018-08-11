@@ -36,3 +36,7 @@ Thumbs.db
 
 # Ignore built ts files
 dist/**/*
+
+# Nodechef ilfes
+__ncbundle__.zip
+__nc_app__ts-server.json

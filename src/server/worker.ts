@@ -4,6 +4,8 @@ import logger from './util/logger';
 import { queue } from './util/queue';
 import { QueueJobType } from './util/queue/queue-job-type';
 
+logger.info(`Worker starting up (PID: ${process.pid})`);
+
 queue.process(
   QueueJobType.SendEmailSigninMail,
   (job: Job, done: DoneCallback) => {
@@ -13,6 +15,6 @@ queue.process(
       }...`,
       job.data
     );
-    setTimeout(() => done(undefined, job.data), 2000);
+    setTimeout(() => done(undefined, job.data), 1000);
   }
 );

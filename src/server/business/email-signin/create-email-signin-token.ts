@@ -12,7 +12,7 @@ export default async function createEmailSigninToken(
   email: string
 ): Promise<EmailSigninModel> {
   if (!email) throw Error('email is required');
-  logger.info(`Created EmailSignin for email ${email}`);
+  logger.info(`Created EmailSignin for ${email}`);
 
   return (
     // Fetch user with this email address.

@@ -4,10 +4,11 @@
   "author": "Kim Andersen",
   "license": "MIT",
   "scripts": {
-    "start": "npm run serve",
+    "start": "npm run pm2 start ./pm2/pm2.development.config.json",
+    "start-runtime": "npm run pm2-runtime start pm2/pm2.production.config.json",
     "build": "npm run build-sass && npm run build-ts && npm run tslint && npm run copy-static-assets",
-    "serve": "node dist/server/index.js",
-    "watch-node": "nodemon dist/server/index.js",
+    "serve": "node dist/server/start.js",
+    "watch-node": "nodemon dist/server/start.js",
     "watch": "concurrently -k -p \"[{name}]\" -n \"Sass,TypeScript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-sass\" \"npm run watch-ts\" \"npm run watch-node\"",
     "watch-build": "concurrently -k -p \"[{name}]\" -n \"Sass,TypeScript\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-sass\" \"npm run watch-ts\"",
     "test": "jest --forceExit --coverage --verbose --detectOpenHandles",
@@ -19,12 +20,15 @@
     "tslint": "tslint -c tslint.json -p tsconfig.json",
     "copy-static-assets": "ts-node ./scripts/copyStaticAssets.ts",
     "debug": "npm run build && npm run watch-debug",
-    "serve-debug": "nodemon --inspect dist/server/index.js",
+    "serve-debug": "nodemon --inspect dist/server/start.js",
     "watch-debug": "concurrently -k -p \"[{name}]\" -n \"Sass,TypeScript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-sass\" \"npm run watch-ts\" \"npm run serve-debug\"",
     "tsc": "tsc",
+    "pm2-runtime": "pm2-runtime",
+    "pm2": "pm2",
     "db-migrate": "knex migrate:latest",
     "db-seed": "knex seed:run",
-    "postinstall": "npm run db-migrate"
+    "nc-deploy": "nc deploy -i ts-server -cmd start-runtime",
+    "nc-deploy-rebuild": "nc deploy -i ts-server -cmd start-runtime --rebuild"
   },
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
@@ -46,6 +50,7 @@
     "moment": "2.22.2",
     "node-sass": "4.9.3",
     "pg": "7.4.3",
+    "pm2": "3.0.3",
     "pug": "2.0.3",
     "typescript": "3.0.1",
     "winston": "3.0.0"
