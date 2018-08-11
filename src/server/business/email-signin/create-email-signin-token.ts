@@ -38,7 +38,7 @@ export default async function createEmailSigninToken(
           })
       )
 
-      // Create queue job to send out email with signin token.
+      // Queue job to send out email with signin token.
       .then(combined =>
         queue
           .create(

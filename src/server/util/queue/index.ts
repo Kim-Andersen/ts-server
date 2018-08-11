@@ -1,4 +1,2 @@
-export * from './JobType';
+export { JobDescription, JobType, JobPriority } from './types';
 export { default as queue } from './queue';
-export * from './JobPriority';
-export * from './JobDescription';

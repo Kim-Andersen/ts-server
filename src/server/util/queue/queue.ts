@@ -3,8 +3,7 @@ import kue, { DoneCallback } from 'kue';
 
 import { REDIS_URL } from '../env';
 import logger from '../logger';
-import { JobDescription } from './JobDescription';
-import { JobType } from './JobType';
+import { JobDescription, JobType } from './types';
 
 const _queue = kue.createQueue({
   prefix: 'q',

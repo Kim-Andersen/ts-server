@@ -2,8 +2,7 @@ import { DoneCallback, Job } from 'kue';
 
 import logger from './util/logger';
 import { mailer } from './util/mail';
-import { queue } from './util/queue';
-import { JobType } from './util/queue/JobType';
+import { JobType, queue } from './util/queue';
 
 logger.info(`Worker starting up (PID: ${process.pid})`);
 
