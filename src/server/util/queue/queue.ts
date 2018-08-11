@@ -17,7 +17,7 @@ const _Queue = {
   ) {
     const job: Job = _queue.create(type, data).save((err: any) => {
       if (!err) {
-        logger.info(`Succesfully created job: ${type}`);
+        logger.info(`Job created: ${type}`);
       } else {
         logger.error(`Failed to create job: ${type}`, data, err);
         throw err;

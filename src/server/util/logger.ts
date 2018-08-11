@@ -5,7 +5,7 @@ import { NODE_ENV } from './env';
 const logger = winston.createLogger({
   transports: [
     new winston.transports.Console({
-      level: NODE_ENV === 'production' ? 'notice' : 'debug'
+      level: NODE_ENV === 'production' ? 'info' : 'debug'
     }),
     new winston.transports.File({ filename: 'debug.log', level: 'debug' })
   ]
