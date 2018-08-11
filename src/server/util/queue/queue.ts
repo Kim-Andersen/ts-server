@@ -4,7 +4,7 @@ import kue, { DoneCallback } from 'kue';
 import { REDIS_URL } from '../env';
 import logger from '../logger';
 import { JobDescription } from './JobDescription';
-import { QueueJobType } from './queue-job-type';
+import { JobType } from './JobType';
 
 const _queue = kue.createQueue({
   prefix: 'q',
@@ -31,25 +31,25 @@ _queue
   .on('error', (err: any) => {
     logger.error(`Queue: error`, err);
   })
-  .on('job enqueue', function(id: any, type: QueueJobType) {
+  .on('job enqueue', function(id: any, type: JobType) {
     logger.info(`Queue: ${type} job enqueued (id ${id})`);
   })
-  .on('job start', function(id: any, type: QueueJobType) {
+  .on('job start', function(id: any, type: JobType) {
     logger.info(`Queue: ${type} job started (id ${id})`);
   })
-  .on('job progress', function(id: any, type: QueueJobType) {
+  .on('job progress', function(id: any, type: JobType) {
     logger.info(`Queue: ${type} job progressed (id ${id})`);
   })
-  .on('job remove', function(id: any, type: QueueJobType) {
+  .on('job remove', function(id: any, type: JobType) {
     logger.info(`Queue: ${type} job removed (id ${id})`);
   })
-  .on('job complete', function(id: any, type: QueueJobType) {
+  .on('job complete', function(id: any, type: JobType) {
     logger.info(`Queue: ${type} job completed (id ${id})`);
   })
-  .on('job failed', function(id: any, type: QueueJobType) {
+  .on('job failed', function(id: any, type: JobType) {
     logger.error(`Queue: ${type} job failed (id ${id})`);
   })
-  .on('job failed attempt', function(id: any, type: QueueJobType) {
+  .on('job failed attempt', function(id: any, type: JobType) {
     logger.warn(`Queue: ${type} job failed attempt (id ${id})`);
   });
 
@@ -77,11 +77,7 @@ const _Queue = {
 
   _queue,
 
-  process: (
-    type: QueueJobType,
-    number: number,
-    callback?: DoneCallback
-  ): void => {
+  process: (type: JobType, number: number, callback?: DoneCallback): void => {
     _queue.process(type, number, callback);
   }
 };

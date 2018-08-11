@@ -1,21 +1,7 @@
 import { EmailSigninModel, UserModel } from '../../db/models';
 import logger from '../../util/logger';
-import { JobDescription, JobPriority, queue, QueueJobType } from '../../util/queue';
-
-function createSendEmailSigninJob(emailSigninModel: EmailSigninModel) {
-  return queue
-    .create(
-      new JobDescription(
-        QueueJobType.SendEmailSigninMail,
-        JobPriority.High,
-        3,
-        {
-          userId: emailSigninModel.userId
-        }
-      )
-    )
-    .then(() => emailSigninModel);
-}
+import { JobDescription, JobPriority, JobType, queue } from '../../util/queue';
+import { createEmailSigninMailMessage } from './createEmailSigninMailMessage';
 
 export default async function createEmailSigninToken(
   email: string
@@ -39,17 +25,34 @@ export default async function createEmailSigninToken(
           .destroy({ require: false })
           .then(() => user)
       )
-
       // Create new email signin record.
       .then(user =>
         new EmailSigninModel({
           user_id: user.id,
           email,
           token: EmailSigninModel.generateRandomToken()
-        }).save()
+        })
+          .save()
+          .then(emailSigninModel => {
+            return { user, emailSigninModel };
+          })
       )
 
       // Create queue job to send out email with signin token.
-      .then(createSendEmailSigninJob)
+      .then(combined =>
+        queue
+          .create(
+            new JobDescription(
+              JobType.SendMailMessage,
+              JobPriority.High,
+              3,
+              createEmailSigninMailMessage(
+                combined.user,
+                combined.emailSigninModel
+              )
+            )
+          )
+          .then(() => combined.emailSigninModel)
+      )
   );
 }

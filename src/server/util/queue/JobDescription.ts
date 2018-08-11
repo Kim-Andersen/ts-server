@@ -1,9 +1,9 @@
 import { JobPriority } from './JobPriority';
-import { QueueJobType } from './queue-job-type';
+import { JobType } from './JobType';
 
 export class JobDescription {
   constructor(
-    public readonly type: QueueJobType,
+    public readonly type: JobType,
     public priority = JobPriority.Normal,
     public attempts = 1,
     public data: any

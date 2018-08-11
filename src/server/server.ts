@@ -3,6 +3,10 @@ import errorHandler from 'errorhandler';
 import app from './app';
 import { ROOT_URL, validateEnvironment } from './util/env';
 
+process.stderr.on('data', function(data) {
+  console.error('stderr', data);
+});
+
 validateEnvironment();
 
 /**

@@ -1,30 +1,28 @@
 import { DoneCallback, Job } from 'kue';
 
-import EmailSignin from './business/email-signin';
 import logger from './util/logger';
+import { mailer } from './util/mail';
 import { queue } from './util/queue';
-import { QueueJobType } from './util/queue/queue-job-type';
+import { JobType } from './util/queue/JobType';
 
 logger.info(`Worker starting up (PID: ${process.pid})`);
 
+process.stderr.on('data', function(data) {
+  console.error('stderr', data);
+});
+
 queue._queue.process(
-  QueueJobType.SendEmailSigninMail,
-  20,
+  JobType.SendMailMessage,
+  10,
   (job: Job, done: DoneCallback) => {
     logger.info(
-      `Worker ${process.pid} processing job ${
-        QueueJobType.SendEmailSigninMail
-      }...`,
+      `Worker ${process.pid} processing job ${JobType.SendMailMessage}...`,
       JSON.stringify(job.data)
     );
 
-    if (!job.data.userId) {
-      logger.error(`No userId found in job data`, JSON.stringify(job.data));
-      return done(new Error(`No userId found in job data`));
-    }
-
-    EmailSignin.sendEmailSigninMail(job.data.userId).catch((err: any) =>
-      done(err)
-    );
+    mailer
+      .send(job.data)
+      .then(result => done(undefined, result))
+      .catch(err => done(err));
   }
 );
