@@ -1,12 +1,19 @@
 import { EmailSigninModel, UserModel } from '../../db/models';
 import logger from '../../util/logger';
-import { queue, QueueJobType } from '../../util/queue';
+import { JobDescription, JobPriority, queue, QueueJobType } from '../../util/queue';
 
 function createSendEmailSigninJob(emailSigninModel: EmailSigninModel) {
   return queue
-    .create(QueueJobType.SendEmailSigninMail, {
-      userId: emailSigninModel.userId
-    })
+    .create(
+      new JobDescription(
+        QueueJobType.SendEmailSigninMail,
+        JobPriority.High,
+        3,
+        {
+          userId: emailSigninModel.userId
+        }
+      )
+    )
     .then(() => emailSigninModel);
 }
 

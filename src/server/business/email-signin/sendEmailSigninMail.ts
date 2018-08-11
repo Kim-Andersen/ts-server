@@ -1,4 +1,5 @@
 import Promise from 'bluebird';
+import url from 'url';
 
 import { EmailSigninModel, UserModel } from '../../db/models';
 import { ROOT_URL } from '../../util/env';
@@ -15,7 +16,10 @@ function _sendMail(
     }`
   );
 
-  const signInUrl = `${ROOT_URL}/callback/email?token=${emailSignin.token}`;
+  const signInUrl = new url.URL(
+    `/callback/email?token=${emailSignin.token}`,
+    ROOT_URL
+  );
   const html = `
     <a href="${signInUrl}">Sign in to [site name]</a>
   `;

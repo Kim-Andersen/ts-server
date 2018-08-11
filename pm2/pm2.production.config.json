@@ -3,12 +3,12 @@
     {
       "name": "app",
       "script": "dist/server/start.js",
-      "instances": 2
+      "instances": 1
     },
     {
       "name": "worker",
       "script": "dist/server/worker.js",
-      "instances": 2
+      "instances": 1
     }
   ]
 }
