@@ -11,8 +11,6 @@ export const NODE_ENV = process.env.NODE_ENV!;
 export const PORT = parseInt(process.env.PORT!, 10);
 export const POSTGRES_URL = process.env.POSTGRES_URL!;
 export const REDIS_URL = process.env.REDIS_URL!;
-// export const REDIS_HOST = process.env.REDIS_HOST!;
-// export const REDIS_PORT = parseInt(process.env.REDIS_PORT!, 10);
 export const SESSION_SECRET = process.env.SESSION_SECRET!;
 
 function isEmptyString(value: any): boolean {
@@ -31,7 +29,7 @@ export function validateEnvironment(): void {
   }
   if (isEmptyString(NODE_ENV)) {
     logger.error(
-      'No ENVIRONMENT string found. Set ENVIRONMENT environment variable.'
+      'No NODE_ENV string found. Set NODE_ENV environment variable.'
     );
     exit = true;
   }
@@ -51,18 +49,6 @@ export function validateEnvironment(): void {
     );
     exit = true;
   }
-  // if (isEmptyString(REDIS_HOST)) {
-  //   logger.error(
-  //     'No REDIS_HOST string found. Set REDIS_HOST environment variable.'
-  //   );
-  //   exit = true;
-  // }
-  // if (!REDIS_PORT || !isNumber(REDIS_PORT)) {
-  //   logger.error(
-  //     'No REDIS_PORT number found. Set REDIS_PORT environment variable.'
-  //   );
-  //   exit = true;
-  // }
   if (isEmptyString(SESSION_SECRET)) {
     logger.error(
       'No SESSION_SECRET string found. Set SESSION_SECRET environment variable.'
