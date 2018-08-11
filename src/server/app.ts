@@ -9,6 +9,7 @@ import apiRouter from './api/api-router';
 import configureSession from './configure-session';
 import emailSigninCallbackController from './controllers/email-signin-callback';
 import * as homeController from './controllers/home';
+import { PORT } from './util/env';
 
 // import session from 'express-session';
 // import expressValidator from 'express-validator';
@@ -43,7 +44,7 @@ const app = express();
 //   });
 
 // Express configuration
-app.set('port', process.env.PORT);
+app.set('port', PORT);
 app.set('views', path.join(__dirname, '../views'));
 app.set('view engine', 'pug');
 app.use(compression());

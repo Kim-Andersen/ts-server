@@ -8,8 +8,6 @@ import logger from '../util/logger';
  * Home page.
  */
 export let index = (req: Request, res: Response) => {
-  console.log('req.session', JSON.stringify(req.session));
-
   if (req.session) {
     req.session.views = req.session.views || 0;
 
@@ -18,7 +16,8 @@ export let index = (req: Request, res: Response) => {
       if (err) {
         logger.error('Failed to save session', err);
       }
-      return res.status(HttpStatusCode.OK).send(`Welcome home!`);
     });
   }
+
+  return res.status(HttpStatusCode.OK).send(`Welcome home!`);
 };

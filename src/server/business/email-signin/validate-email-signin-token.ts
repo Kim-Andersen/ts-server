@@ -13,11 +13,14 @@ export function validateEmailSigninToken(
   if (!token) throw Error('token is required');
   logger.info(`Validating EmailSignin token.`, { token });
 
-  return new EmailSigninModel().fetchByToken(token).then(emailSigninModel => {
-    if (emailSigninModel.isValid()) {
-      return emailSigninModel;
-    } else {
-      throw EmailSigninModel.TokenExpiredError;
-    }
-  });
+  return new EmailSigninModel()
+    .where({ token })
+    .fetch({ require: true })
+    .then(emailSigninModel => {
+      if (emailSigninModel.isValid()) {
+        return emailSigninModel;
+      } else {
+        throw EmailSigninModel.TokenExpiredError;
+      }
+    });
 }

@@ -1,16 +1,13 @@
 import Promise from 'bluebird';
 import kue, { DoneCallback, Job } from 'kue';
 
-import { REDIS_HOST, REDIS_PORT } from '../env';
+import { REDIS_URL } from '../env';
 import logger from '../logger';
 import { QueueJobType } from './queue-job-type';
 
 const _queue = kue.createQueue({
   prefix: 'q',
-  redis: {
-    port: REDIS_PORT,
-    host: REDIS_HOST
-  }
+  redis: REDIS_URL
 });
 
 const _Queue = {

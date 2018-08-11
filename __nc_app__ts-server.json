@@ -2,493 +2,1363 @@
   ".gitignore": {
     "mt": "Tue Aug 07 2018 18:58:26 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/.gitignore"
   },
   "coverage/clover.xml": {
-    "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/coverage/clover.xml"
   },
   "coverage/coverage-final.json": {
-    "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/coverage/coverage-final.json"
   },
   "coverage/lcov-report/app.ts.html": {
     "mt": "Tue Aug 07 2018 19:36:52 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/app.ts.html"
   },
   "coverage/lcov-report/base.css": {
-    "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/base.css"
   },
   "coverage/lcov-report/block-navigation.js": {
-    "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/block-navigation.js"
   },
   "coverage/lcov-report/dist/app.js.html": {
     "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/app.js.html"
   },
   "coverage/lcov-report/dist/controllers/home.js.html": {
     "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/controllers/home.js.html"
   },
   "coverage/lcov-report/dist/controllers/index.html": {
     "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/controllers/index.html"
   },
   "coverage/lcov-report/dist/index.html": {
     "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/index.html"
   },
   "coverage/lcov-report/dist/util/index.html": {
     "mt": "Tue Aug 07 2018 20:54:08 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/util/index.html"
   },
   "coverage/lcov-report/dist/util/queue/index.html": {
     "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/util/queue/index.html"
   },
   "coverage/lcov-report/dist/util/queue/jobs.js.html": {
     "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/util/queue/jobs.js.html"
   },
   "coverage/lcov-report/dist/util/queue/queue-manager.js.html": {
     "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/util/queue/queue-manager.js.html"
   },
   "coverage/lcov-report/dist/util/queue/types.js.html": {
     "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/util/queue/types.js.html"
   },
   "coverage/lcov-report/dist/util/queue.js.html": {
     "mt": "Tue Aug 07 2018 20:54:08 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/util/queue.js.html"
   },
   "coverage/lcov-report/index.html": {
-    "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/index.html"
   },
   "coverage/lcov-report/prettify.css": {
-    "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/prettify.css"
   },
   "coverage/lcov-report/prettify.js": {
-    "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/prettify.js"
   },
   "coverage/lcov-report/sort-arrow-sprite.png": {
-    "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/sort-arrow-sprite.png"
   },
   "coverage/lcov-report/sorter.js": {
-    "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/sorter.js"
   },
   "coverage/lcov-report/src/app.ts.html": {
     "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/app.ts.html"
   },
   "coverage/lcov-report/src/controllers/home.ts.html": {
     "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/controllers/home.ts.html"
   },
   "coverage/lcov-report/src/controllers/index.html": {
     "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/controllers/index.html"
   },
   "coverage/lcov-report/src/index.html": {
     "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/index.html"
   },
   "coverage/lcov-report/src/util/index.html": {
     "mt": "Tue Aug 07 2018 20:54:08 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/util/index.html"
   },
   "coverage/lcov-report/src/util/queue/index.html": {
     "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/util/queue/index.html"
   },
   "coverage/lcov-report/src/util/queue/jobs.ts.html": {
     "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/util/queue/jobs.ts.html"
   },
   "coverage/lcov-report/src/util/queue/queue-manager.ts.html": {
     "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/util/queue/queue-manager.ts.html"
   },
   "coverage/lcov-report/src/util/queue/types.ts.html": {
     "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/util/queue/types.ts.html"
   },
   "coverage/lcov-report/src/util/queue.ts.html": {
     "mt": "Tue Aug 07 2018 20:54:08 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/util/queue.ts.html"
   },
   "coverage/lcov.info": {
-    "mt": "Tue Aug 07 2018 22:25:29 GMT+0200 (CEST)",
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/coverage/lcov.info"
   },
   "debug.log": {
-    "mt": "Tue Aug 07 2018 19:53:38 GMT+0200 (CEST)",
+    "mt": "Sat Aug 11 2018 13:33:02 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/debug.log"
-  },
-  "dist/app.js": {
-    "mt": "Wed Aug 08 2018 00:53:31 GMT+0200 (CEST)",
-    "exists": true,
-    "state": 1,
-    "path": "/Users/kimandersen/projects/ts-server/dist/app.js"
-  },
-  "dist/app.js.map": {
-    "mt": "Wed Aug 08 2018 00:53:31 GMT+0200 (CEST)",
-    "exists": true,
-    "state": 1,
-    "path": "/Users/kimandersen/projects/ts-server/dist/app.js.map"
-  },
-  "dist/app.test.js": {
-    "mt": "Wed Aug 08 2018 00:53:31 GMT+0200 (CEST)",
-    "exists": true,
-    "state": 1,
-    "path": "/Users/kimandersen/projects/ts-server/dist/app.test.js"
-  },
-  "dist/app.test.js.map": {
-    "mt": "Wed Aug 08 2018 00:53:31 GMT+0200 (CEST)",
-    "exists": true,
-    "state": 1,
-    "path": "/Users/kimandersen/projects/ts-server/dist/app.test.js.map"
-  },
-  "dist/controllers/home.js": {
-    "mt": "Wed Aug 08 2018 00:53:31 GMT+0200 (CEST)",
-    "exists": true,
-    "state": 1,
-    "path": "/Users/kimandersen/projects/ts-server/dist/controllers/home.js"
-  },
-  "dist/controllers/home.js.map": {
-    "mt": "Wed Aug 08 2018 00:53:31 GMT+0200 (CEST)",
-    "exists": true,
-    "state": 1,
-    "path": "/Users/kimandersen/projects/ts-server/dist/controllers/home.js.map"
-  },
-  "dist/controllers/home.test.js": {
-    "mt": "Wed Aug 08 2018 00:53:31 GMT+0200 (CEST)",
-    "exists": true,
-    "state": 1,
-    "path": "/Users/kimandersen/projects/ts-server/dist/controllers/home.test.js"
-  },
-  "dist/controllers/home.test.js.map": {
-    "mt": "Wed Aug 08 2018 00:53:31 GMT+0200 (CEST)",
-    "exists": true,
-    "state": 1,
-    "path": "/Users/kimandersen/projects/ts-server/dist/controllers/home.test.js.map"
-  },
-  "dist/public/css/main.css": {
-    "mt": "Wed Aug 08 2018 00:27:52 GMT+0200 (CEST)",
-    "exists": true,
-    "state": 1,
-    "path": "/Users/kimandersen/projects/ts-server/dist/public/css/main.css"
-  },
-  "dist/server.js": {
-    "mt": "Wed Aug 08 2018 00:53:31 GMT+0200 (CEST)",
-    "exists": true,
-    "state": 1,
-    "path": "/Users/kimandersen/projects/ts-server/dist/server.js"
-  },
-  "dist/server.js.map": {
-    "mt": "Wed Aug 08 2018 00:53:31 GMT+0200 (CEST)",
-    "exists": true,
-    "state": 1,
-    "path": "/Users/kimandersen/projects/ts-server/dist/server.js.map"
-  },
-  "dist/util/logger.js": {
-    "mt": "Wed Aug 08 2018 00:53:31 GMT+0200 (CEST)",
-    "exists": true,
-    "state": 1,
-    "path": "/Users/kimandersen/projects/ts-server/dist/util/logger.js"
-  },
-  "dist/util/logger.js.map": {
-    "mt": "Wed Aug 08 2018 00:53:31 GMT+0200 (CEST)",
-    "exists": true,
-    "state": 1,
-    "path": "/Users/kimandersen/projects/ts-server/dist/util/logger.js.map"
-  },
-  "dist/util/queue/index.js": {
-    "mt": "Tue Aug 07 2018 22:08:56 GMT+0200 (CEST)",
-    "exists": true,
-    "state": 1,
-    "path": "/Users/kimandersen/projects/ts-server/dist/util/queue/index.js"
-  },
-  "dist/util/queue/index.js.map": {
-    "mt": "Tue Aug 07 2018 22:08:56 GMT+0200 (CEST)",
-    "exists": true,
-    "state": 1,
-    "path": "/Users/kimandersen/projects/ts-server/dist/util/queue/index.js.map"
-  },
-  "dist/util/queue/job-types.js": {
-    "mt": "Tue Aug 07 2018 21:12:49 GMT+0200 (CEST)",
-    "exists": true,
-    "state": 1,
-    "path": "/Users/kimandersen/projects/ts-server/dist/util/queue/job-types.js"
-  },
-  "dist/util/queue/job-types.js.map": {
-    "mt": "Tue Aug 07 2018 21:12:49 GMT+0200 (CEST)",
-    "exists": true,
-    "state": 1,
-    "path": "/Users/kimandersen/projects/ts-server/dist/util/queue/job-types.js.map"
-  },
-  "dist/util/queue/jobs.js": {
-    "mt": "Wed Aug 08 2018 00:53:31 GMT+0200 (CEST)",
-    "exists": true,
-    "state": 1,
-    "path": "/Users/kimandersen/projects/ts-server/dist/util/queue/jobs.js"
-  },
-  "dist/util/queue/jobs.js.map": {
-    "mt": "Wed Aug 08 2018 00:53:31 GMT+0200 (CEST)",
-    "exists": true,
-    "state": 1,
-    "path": "/Users/kimandersen/projects/ts-server/dist/util/queue/jobs.js.map"
-  },
-  "dist/util/queue/queue-manager.js": {
-    "mt": "Wed Aug 08 2018 00:53:31 GMT+0200 (CEST)",
-    "exists": true,
-    "state": 1,
-    "path": "/Users/kimandersen/projects/ts-server/dist/util/queue/queue-manager.js"
-  },
-  "dist/util/queue/queue-manager.js.map": {
-    "mt": "Wed Aug 08 2018 00:53:31 GMT+0200 (CEST)",
-    "exists": true,
-    "state": 1,
-    "path": "/Users/kimandersen/projects/ts-server/dist/util/queue/queue-manager.js.map"
-  },
-  "dist/util/queue/queue.js": {
-    "mt": "Tue Aug 07 2018 21:14:54 GMT+0200 (CEST)",
-    "exists": true,
-    "state": 1,
-    "path": "/Users/kimandersen/projects/ts-server/dist/util/queue/queue.js"
-  },
-  "dist/util/queue/queue.js.map": {
-    "mt": "Tue Aug 07 2018 21:14:54 GMT+0200 (CEST)",
-    "exists": true,
-    "state": 1,
-    "path": "/Users/kimandersen/projects/ts-server/dist/util/queue/queue.js.map"
-  },
-  "dist/util/queue/types.js": {
-    "mt": "Wed Aug 08 2018 00:53:31 GMT+0200 (CEST)",
-    "exists": true,
-    "state": 1,
-    "path": "/Users/kimandersen/projects/ts-server/dist/util/queue/types.js"
-  },
-  "dist/util/queue/types.js.map": {
-    "mt": "Wed Aug 08 2018 00:53:31 GMT+0200 (CEST)",
-    "exists": true,
-    "state": 1,
-    "path": "/Users/kimandersen/projects/ts-server/dist/util/queue/types.js.map"
-  },
-  "dist/util/queue.js": {
-    "mt": "Tue Aug 07 2018 21:10:07 GMT+0200 (CEST)",
-    "exists": true,
-    "state": 1,
-    "path": "/Users/kimandersen/projects/ts-server/dist/util/queue.js"
-  },
-  "dist/util/queue.js.map": {
-    "mt": "Tue Aug 07 2018 21:10:07 GMT+0200 (CEST)",
-    "exists": true,
-    "state": 1,
-    "path": "/Users/kimandersen/projects/ts-server/dist/util/queue.js.map"
-  },
-  "dist/worker.js": {
-    "mt": "Wed Aug 08 2018 00:53:31 GMT+0200 (CEST)",
-    "exists": true,
-    "state": 1,
-    "path": "/Users/kimandersen/projects/ts-server/dist/worker.js"
-  },
-  "dist/worker.js.map": {
-    "mt": "Wed Aug 08 2018 00:53:31 GMT+0200 (CEST)",
-    "exists": true,
-    "state": 1,
-    "path": "/Users/kimandersen/projects/ts-server/dist/worker.js.map"
   },
   "documentation/redis.md": {
     "mt": "Tue Aug 07 2018 20:29:31 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/documentation/redis.md"
   },
   "ecosystem.config.js": {
-    "mt": "Wed Aug 08 2018 00:08:46 GMT+0200 (CEST)",
+    "mt": "Wed Aug 08 2018 18:33:43 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/ecosystem.config.js"
   },
   "jest.config.js": {
     "mt": "Tue Aug 07 2018 18:54:14 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/jest.config.js"
   },
   "package.json": {
-    "mt": "Wed Aug 08 2018 00:53:29 GMT+0200 (CEST)",
+    "mt": "Sat Aug 11 2018 13:49:16 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 2,
     "path": "/Users/kimandersen/projects/ts-server/package.json"
   },
   "scripts/copyStaticAssets.ts": {
     "mt": "Tue Aug 07 2018 18:40:39 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/scripts/copyStaticAssets.ts"
-  },
-  "src/app.test.ts": {
-    "mt": "Tue Aug 07 2018 21:31:02 GMT+0200 (CEST)",
-    "exists": true,
-    "state": 1,
-    "path": "/Users/kimandersen/projects/ts-server/src/app.test.ts"
-  },
-  "src/app.ts": {
-    "mt": "Tue Aug 07 2018 20:38:50 GMT+0200 (CEST)",
-    "exists": true,
-    "state": 1,
-    "path": "/Users/kimandersen/projects/ts-server/src/app.ts"
-  },
-  "src/controllers/home.test.ts": {
-    "mt": "Tue Aug 07 2018 20:53:42 GMT+0200 (CEST)",
-    "exists": true,
-    "state": 1,
-    "path": "/Users/kimandersen/projects/ts-server/src/controllers/home.test.ts"
-  },
-  "src/controllers/home.ts": {
-    "mt": "Tue Aug 07 2018 22:25:08 GMT+0200 (CEST)",
-    "exists": true,
-    "state": 1,
-    "path": "/Users/kimandersen/projects/ts-server/src/controllers/home.ts"
   },
   "src/public/css/main.scss": {
     "mt": "Tue Aug 07 2018 18:49:35 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/src/public/css/main.scss"
   },
-  "src/server.ts": {
-    "mt": "Tue Aug 07 2018 18:47:00 GMT+0200 (CEST)",
-    "exists": true,
-    "state": 1,
-    "path": "/Users/kimandersen/projects/ts-server/src/server.ts"
-  },
-  "src/util/logger.ts": {
-    "mt": "Tue Aug 07 2018 19:53:36 GMT+0200 (CEST)",
-    "exists": true,
-    "state": 1,
-    "path": "/Users/kimandersen/projects/ts-server/src/util/logger.ts"
-  },
-  "src/util/queue/jobs.ts": {
-    "mt": "Tue Aug 07 2018 22:00:48 GMT+0200 (CEST)",
-    "exists": true,
-    "state": 1,
-    "path": "/Users/kimandersen/projects/ts-server/src/util/queue/jobs.ts"
-  },
-  "src/util/queue/queue-manager.ts": {
-    "mt": "Tue Aug 07 2018 22:17:50 GMT+0200 (CEST)",
-    "exists": true,
-    "state": 1,
-    "path": "/Users/kimandersen/projects/ts-server/src/util/queue/queue-manager.ts"
-  },
-  "src/util/queue/types.ts": {
-    "mt": "Tue Aug 07 2018 21:30:14 GMT+0200 (CEST)",
-    "exists": true,
-    "state": 1,
-    "path": "/Users/kimandersen/projects/ts-server/src/util/queue/types.ts"
-  },
-  "src/worker.ts": {
-    "mt": "Wed Aug 08 2018 00:06:55 GMT+0200 (CEST)",
-    "exists": true,
-    "state": 1,
-    "path": "/Users/kimandersen/projects/ts-server/src/worker.ts"
-  },
   "tsconfig.json": {
-    "mt": "Wed Aug 08 2018 00:53:30 GMT+0200 (CEST)",
+    "mt": "Sat Aug 11 2018 12:47:53 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/tsconfig.json"
   },
   "tslint.json": {
     "mt": "Tue Aug 07 2018 18:38:51 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/tslint.json"
   },
   "yarn-error.log": {
     "mt": "Tue Aug 07 2018 18:29:01 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/yarn-error.log"
   },
   "yarn.lock": {
-    "mt": "Tue Aug 07 2018 20:30:30 GMT+0200 (CEST)",
+    "mt": "Sat Aug 11 2018 13:23:10 GMT+0200 (CEST)",
     "exists": true,
-    "state": 1,
+    "state": 3,
     "path": "/Users/kimandersen/projects/ts-server/yarn.lock"
+  },
+  ".env.development": {
+    "mt": "Sat Aug 11 2018 13:19:47 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/.env.development"
+  },
+  "README.md": {
+    "mt": "Sat Aug 11 2018 12:14:16 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/README.md"
+  },
+  "coverage/lcov-report/dist/server/api/api-router.js.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/server/api/api-router.js.html"
+  },
+  "coverage/lcov-report/dist/server/api/controllers/email-signin-controller.js.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/server/api/controllers/email-signin-controller.js.html"
+  },
+  "coverage/lcov-report/dist/server/api/controllers/index.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/server/api/controllers/index.html"
+  },
+  "coverage/lcov-report/dist/server/api/index.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/server/api/index.html"
+  },
+  "coverage/lcov-report/dist/server/app.js.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/server/app.js.html"
+  },
+  "coverage/lcov-report/dist/server/business/auth/email/email-authenticator.js.html": {
+    "mt": "Wed Aug 08 2018 20:15:20 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/server/business/auth/email/email-authenticator.js.html"
+  },
+  "coverage/lcov-report/dist/server/business/auth/email/index.html": {
+    "mt": "Wed Aug 08 2018 20:15:20 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/server/business/auth/email/index.html"
+  },
+  "coverage/lcov-report/dist/server/business/auth/email/index.js.html": {
+    "mt": "Wed Aug 08 2018 20:15:20 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/server/business/auth/email/index.js.html"
+  },
+  "coverage/lcov-report/dist/server/business/email-signin/create-email-signin-token.js.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/server/business/email-signin/create-email-signin-token.js.html"
+  },
+  "coverage/lcov-report/dist/server/business/email-signin/index.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/server/business/email-signin/index.html"
+  },
+  "coverage/lcov-report/dist/server/business/email-signin/index.js.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/server/business/email-signin/index.js.html"
+  },
+  "coverage/lcov-report/dist/server/business/email-signin/validate-email-signin-token.js.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/server/business/email-signin/validate-email-signin-token.js.html"
+  },
+  "coverage/lcov-report/dist/server/business/user/index.html": {
+    "mt": "Wed Aug 08 2018 20:15:20 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/server/business/user/index.html"
+  },
+  "coverage/lcov-report/dist/server/business/user/index.js.html": {
+    "mt": "Wed Aug 08 2018 20:15:20 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/server/business/user/index.js.html"
+  },
+  "coverage/lcov-report/dist/server/business/user/user.js.html": {
+    "mt": "Wed Aug 08 2018 20:15:20 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/server/business/user/user.js.html"
+  },
+  "coverage/lcov-report/dist/server/controllers/email-signin-callback.js.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/server/controllers/email-signin-callback.js.html"
+  },
+  "coverage/lcov-report/dist/server/controllers/home.js.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/server/controllers/home.js.html"
+  },
+  "coverage/lcov-report/dist/server/controllers/index.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/server/controllers/index.html"
+  },
+  "coverage/lcov-report/dist/server/db/bookshelf.js.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/server/db/bookshelf.js.html"
+  },
+  "coverage/lcov-report/dist/server/db/index.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/server/db/index.html"
+  },
+  "coverage/lcov-report/dist/server/db/knex.js.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/server/db/knex.js.html"
+  },
+  "coverage/lcov-report/dist/server/db/models/email-signin.js.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/server/db/models/email-signin.js.html"
+  },
+  "coverage/lcov-report/dist/server/db/models/index.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/server/db/models/index.html"
+  },
+  "coverage/lcov-report/dist/server/db/models/index.js.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/server/db/models/index.js.html"
+  },
+  "coverage/lcov-report/dist/server/index.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/server/index.html"
+  },
+  "coverage/lcov-report/dist/server/util/env.js.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/server/util/env.js.html"
+  },
+  "coverage/lcov-report/dist/server/util/index.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/server/util/index.html"
+  },
+  "coverage/lcov-report/dist/server/util/logger.js.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/server/util/logger.js.html"
+  },
+  "coverage/lcov-report/dist/server/util/queue/index.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/server/util/queue/index.html"
+  },
+  "coverage/lcov-report/dist/server/util/queue/index.js.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/server/util/queue/index.js.html"
+  },
+  "coverage/lcov-report/dist/server/util/queue/jobs.js.html": {
+    "mt": "Wed Aug 08 2018 20:15:20 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/server/util/queue/jobs.js.html"
+  },
+  "coverage/lcov-report/dist/server/util/queue/queue-job-type.js.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/server/util/queue/queue-job-type.js.html"
+  },
+  "coverage/lcov-report/dist/server/util/queue/queue-manager.js.html": {
+    "mt": "Wed Aug 08 2018 20:15:20 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/server/util/queue/queue-manager.js.html"
+  },
+  "coverage/lcov-report/dist/server/util/queue/queue.js.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/server/util/queue/queue.js.html"
+  },
+  "coverage/lcov-report/dist/server/util/queue/types.js.html": {
+    "mt": "Wed Aug 08 2018 20:15:20 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/server/util/queue/types.js.html"
+  },
+  "coverage/lcov-report/dist/shared/config.js.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/shared/config.js.html"
+  },
+  "coverage/lcov-report/dist/shared/contract/EmailSigninToken.js.html": {
+    "mt": "Wed Aug 08 2018 20:15:20 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/shared/contract/EmailSigninToken.js.html"
+  },
+  "coverage/lcov-report/dist/shared/contract/index.html": {
+    "mt": "Wed Aug 08 2018 20:15:20 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/shared/contract/index.html"
+  },
+  "coverage/lcov-report/dist/shared/http-status-codes.js.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/shared/http-status-codes.js.html"
+  },
+  "coverage/lcov-report/dist/shared/index.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/dist/shared/index.html"
+  },
+  "coverage/lcov-report/src/server/api/api-router.ts.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/server/api/api-router.ts.html"
+  },
+  "coverage/lcov-report/src/server/api/controllers/email-signin-controller.ts.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/server/api/controllers/email-signin-controller.ts.html"
+  },
+  "coverage/lcov-report/src/server/api/controllers/index.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/server/api/controllers/index.html"
+  },
+  "coverage/lcov-report/src/server/api/index.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/server/api/index.html"
+  },
+  "coverage/lcov-report/src/server/app.ts.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/server/app.ts.html"
+  },
+  "coverage/lcov-report/src/server/business/auth/email/email-authenticator.ts.html": {
+    "mt": "Wed Aug 08 2018 20:15:20 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/server/business/auth/email/email-authenticator.ts.html"
+  },
+  "coverage/lcov-report/src/server/business/auth/email/index.html": {
+    "mt": "Wed Aug 08 2018 20:15:20 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/server/business/auth/email/index.html"
+  },
+  "coverage/lcov-report/src/server/business/auth/email/index.ts.html": {
+    "mt": "Wed Aug 08 2018 20:15:20 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/server/business/auth/email/index.ts.html"
+  },
+  "coverage/lcov-report/src/server/business/email-signin/create-email-signin-token.ts.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/server/business/email-signin/create-email-signin-token.ts.html"
+  },
+  "coverage/lcov-report/src/server/business/email-signin/index.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/server/business/email-signin/index.html"
+  },
+  "coverage/lcov-report/src/server/business/email-signin/index.ts.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/server/business/email-signin/index.ts.html"
+  },
+  "coverage/lcov-report/src/server/business/email-signin/validate-email-signin-token.ts.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/server/business/email-signin/validate-email-signin-token.ts.html"
+  },
+  "coverage/lcov-report/src/server/business/user/index.html": {
+    "mt": "Wed Aug 08 2018 20:15:20 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/server/business/user/index.html"
+  },
+  "coverage/lcov-report/src/server/business/user/index.ts.html": {
+    "mt": "Wed Aug 08 2018 20:15:20 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/server/business/user/index.ts.html"
+  },
+  "coverage/lcov-report/src/server/business/user/user.ts.html": {
+    "mt": "Wed Aug 08 2018 20:15:20 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/server/business/user/user.ts.html"
+  },
+  "coverage/lcov-report/src/server/controllers/email-signin-callback.ts.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/server/controllers/email-signin-callback.ts.html"
+  },
+  "coverage/lcov-report/src/server/controllers/home.ts.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/server/controllers/home.ts.html"
+  },
+  "coverage/lcov-report/src/server/controllers/index.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/server/controllers/index.html"
+  },
+  "coverage/lcov-report/src/server/db/bookshelf.ts.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/server/db/bookshelf.ts.html"
+  },
+  "coverage/lcov-report/src/server/db/index.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/server/db/index.html"
+  },
+  "coverage/lcov-report/src/server/db/knex.ts.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/server/db/knex.ts.html"
+  },
+  "coverage/lcov-report/src/server/db/models/email-signin.ts.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/server/db/models/email-signin.ts.html"
+  },
+  "coverage/lcov-report/src/server/db/models/index.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/server/db/models/index.html"
+  },
+  "coverage/lcov-report/src/server/db/models/index.ts.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/server/db/models/index.ts.html"
+  },
+  "coverage/lcov-report/src/server/index.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/server/index.html"
+  },
+  "coverage/lcov-report/src/server/util/env.ts.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/server/util/env.ts.html"
+  },
+  "coverage/lcov-report/src/server/util/index.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/server/util/index.html"
+  },
+  "coverage/lcov-report/src/server/util/logger.ts.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/server/util/logger.ts.html"
+  },
+  "coverage/lcov-report/src/server/util/queue/index.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/server/util/queue/index.html"
+  },
+  "coverage/lcov-report/src/server/util/queue/index.ts.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/server/util/queue/index.ts.html"
+  },
+  "coverage/lcov-report/src/server/util/queue/jobs.ts.html": {
+    "mt": "Wed Aug 08 2018 20:15:20 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/server/util/queue/jobs.ts.html"
+  },
+  "coverage/lcov-report/src/server/util/queue/queue-job-type.ts.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/server/util/queue/queue-job-type.ts.html"
+  },
+  "coverage/lcov-report/src/server/util/queue/queue-manager.ts.html": {
+    "mt": "Wed Aug 08 2018 20:15:20 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/server/util/queue/queue-manager.ts.html"
+  },
+  "coverage/lcov-report/src/server/util/queue/queue.ts.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/server/util/queue/queue.ts.html"
+  },
+  "coverage/lcov-report/src/server/util/queue/types.ts.html": {
+    "mt": "Wed Aug 08 2018 20:15:20 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/server/util/queue/types.ts.html"
+  },
+  "coverage/lcov-report/src/shared/config.ts.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/shared/config.ts.html"
+  },
+  "coverage/lcov-report/src/shared/contract/EmailSigninToken.ts.html": {
+    "mt": "Wed Aug 08 2018 20:15:20 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/shared/contract/EmailSigninToken.ts.html"
+  },
+  "coverage/lcov-report/src/shared/contract/index.html": {
+    "mt": "Wed Aug 08 2018 20:15:20 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/shared/contract/index.html"
+  },
+  "coverage/lcov-report/src/shared/http-status-codes.ts.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/shared/http-status-codes.ts.html"
+  },
+  "coverage/lcov-report/src/shared/index.html": {
+    "mt": "Fri Aug 10 2018 14:58:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/coverage/lcov-report/src/shared/index.html"
+  },
+  "dist/client/index.js": {
+    "mt": "Sat Aug 11 2018 13:20:14 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/client/index.js"
+  },
+  "dist/client/index.js.map": {
+    "mt": "Sat Aug 11 2018 13:20:14 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/client/index.js.map"
+  },
+  "dist/server/api/api-router.js": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/api/api-router.js"
+  },
+  "dist/server/api/api-router.js.map": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/api/api-router.js.map"
+  },
+  "dist/server/api/controllers/email-signin-controller.js": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/api/controllers/email-signin-controller.js"
+  },
+  "dist/server/api/controllers/email-signin-controller.js.map": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/api/controllers/email-signin-controller.js.map"
+  },
+  "dist/server/api/controllers/email-signin-controller.test.js": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/api/controllers/email-signin-controller.test.js"
+  },
+  "dist/server/api/controllers/email-signin-controller.test.js.map": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/api/controllers/email-signin-controller.test.js.map"
+  },
+  "dist/server/app.js": {
+    "mt": "Sat Aug 11 2018 13:33:01 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/app.js"
+  },
+  "dist/server/app.js.map": {
+    "mt": "Sat Aug 11 2018 13:33:01 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/app.js.map"
+  },
+  "dist/server/app.test.js": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/app.test.js"
+  },
+  "dist/server/app.test.js.map": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/app.test.js.map"
+  },
+  "dist/server/business/email-signin/create-email-signin-token.js": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/business/email-signin/create-email-signin-token.js"
+  },
+  "dist/server/business/email-signin/create-email-signin-token.js.map": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/business/email-signin/create-email-signin-token.js.map"
+  },
+  "dist/server/business/email-signin/createUserSessionFromToken.js": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/business/email-signin/createUserSessionFromToken.js"
+  },
+  "dist/server/business/email-signin/createUserSessionFromToken.js.map": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/business/email-signin/createUserSessionFromToken.js.map"
+  },
+  "dist/server/business/email-signin/index.js": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/business/email-signin/index.js"
+  },
+  "dist/server/business/email-signin/index.js.map": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/business/email-signin/index.js.map"
+  },
+  "dist/server/business/email-signin/validate-email-signin-token.js": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/business/email-signin/validate-email-signin-token.js"
+  },
+  "dist/server/business/email-signin/validate-email-signin-token.js.map": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/business/email-signin/validate-email-signin-token.js.map"
+  },
+  "dist/server/configure-session.js": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/configure-session.js"
+  },
+  "dist/server/configure-session.js.map": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/configure-session.js.map"
+  },
+  "dist/server/controllers/email-signin-callback.js": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/controllers/email-signin-callback.js"
+  },
+  "dist/server/controllers/email-signin-callback.js.map": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/controllers/email-signin-callback.js.map"
+  },
+  "dist/server/controllers/email-signin-callback.test.js": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/controllers/email-signin-callback.test.js"
+  },
+  "dist/server/controllers/email-signin-callback.test.js.map": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/controllers/email-signin-callback.test.js.map"
+  },
+  "dist/server/controllers/home.js": {
+    "mt": "Sat Aug 11 2018 13:33:01 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/controllers/home.js"
+  },
+  "dist/server/controllers/home.js.map": {
+    "mt": "Sat Aug 11 2018 13:33:01 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/controllers/home.js.map"
+  },
+  "dist/server/controllers/home.test.js": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/controllers/home.test.js"
+  },
+  "dist/server/controllers/home.test.js.map": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/controllers/home.test.js.map"
+  },
+  "dist/server/db/bookshelf.js": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/db/bookshelf.js"
+  },
+  "dist/server/db/bookshelf.js.map": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/db/bookshelf.js.map"
+  },
+  "dist/server/db/knex.js": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/db/knex.js"
+  },
+  "dist/server/db/knex.js.map": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/db/knex.js.map"
+  },
+  "dist/server/db/models/email-signin.js": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/db/models/email-signin.js"
+  },
+  "dist/server/db/models/email-signin.js.map": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/db/models/email-signin.js.map"
+  },
+  "dist/server/db/models/index.js": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/db/models/index.js"
+  },
+  "dist/server/db/models/index.js.map": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/db/models/index.js.map"
+  },
+  "dist/server/db/models/user.js": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/db/models/user.js"
+  },
+  "dist/server/db/models/user.js.map": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/db/models/user.js.map"
+  },
+  "dist/server/index.js": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/index.js"
+  },
+  "dist/server/index.js.map": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/index.js.map"
+  },
+  "dist/server/server.js": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/server.js"
+  },
+  "dist/server/server.js.map": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/server.js.map"
+  },
+  "dist/server/util/env.js": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/util/env.js"
+  },
+  "dist/server/util/env.js.map": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/util/env.js.map"
+  },
+  "dist/server/util/logger.js": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/util/logger.js"
+  },
+  "dist/server/util/logger.js.map": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/util/logger.js.map"
+  },
+  "dist/server/util/queue/index.js": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/util/queue/index.js"
+  },
+  "dist/server/util/queue/index.js.map": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/util/queue/index.js.map"
+  },
+  "dist/server/util/queue/queue-job-type.js": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/util/queue/queue-job-type.js"
+  },
+  "dist/server/util/queue/queue-job-type.js.map": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/util/queue/queue-job-type.js.map"
+  },
+  "dist/server/util/queue/queue.js": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/util/queue/queue.js"
+  },
+  "dist/server/util/queue/queue.js.map": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/util/queue/queue.js.map"
+  },
+  "dist/server/worker.js": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/worker.js"
+  },
+  "dist/server/worker.js.map": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/server/worker.js.map"
+  },
+  "dist/shared/config.js": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/shared/config.js"
+  },
+  "dist/shared/config.js.map": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/shared/config.js.map"
+  },
+  "dist/shared/contract/EmailSigninToken.js": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/shared/contract/EmailSigninToken.js"
+  },
+  "dist/shared/contract/EmailSigninToken.js.map": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/shared/contract/EmailSigninToken.js.map"
+  },
+  "dist/shared/contract/UserSession.js": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/shared/contract/UserSession.js"
+  },
+  "dist/shared/contract/UserSession.js.map": {
+    "mt": "Sat Aug 11 2018 13:20:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/shared/contract/UserSession.js.map"
+  },
+  "dist/shared/http-status-codes.js": {
+    "mt": "Sat Aug 11 2018 13:20:14 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/shared/http-status-codes.js"
+  },
+  "dist/shared/http-status-codes.js.map": {
+    "mt": "Sat Aug 11 2018 13:20:14 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/shared/http-status-codes.js.map"
+  },
+  "knexfile.js": {
+    "mt": "Sat Aug 11 2018 13:48:23 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/knexfile.js"
+  },
+  "src/client/index.js": {
+    "mt": "Thu Aug 09 2018 13:41:48 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/src/client/index.js"
+  },
+  "src/client/index.js.map": {
+    "mt": "Thu Aug 09 2018 13:41:48 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/src/client/index.js.map"
+  },
+  "src/client/index.ts": {
+    "mt": "Wed Aug 08 2018 18:38:54 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/src/client/index.ts"
+  },
+  "src/server/api/api-router.ts": {
+    "mt": "Thu Aug 09 2018 16:57:02 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/src/server/api/api-router.ts"
+  },
+  "src/server/api/controllers/email-signin-controller.test.ts": {
+    "mt": "Wed Aug 08 2018 20:15:18 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/src/server/api/controllers/email-signin-controller.test.ts"
+  },
+  "src/server/api/controllers/email-signin-controller.ts": {
+    "mt": "Fri Aug 10 2018 15:17:39 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/src/server/api/controllers/email-signin-controller.ts"
+  },
+  "src/server/app.test.ts": {
+    "mt": "Wed Aug 08 2018 18:29:56 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/src/server/app.test.ts"
+  },
+  "src/server/app.ts": {
+    "mt": "Sat Aug 11 2018 13:31:25 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/src/server/app.ts"
+  },
+  "src/server/business/email-signin/create-email-signin-token.ts": {
+    "mt": "Fri Aug 10 2018 18:35:24 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/src/server/business/email-signin/create-email-signin-token.ts"
+  },
+  "src/server/business/email-signin/createUserSessionFromToken.ts": {
+    "mt": "Fri Aug 10 2018 19:19:30 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/src/server/business/email-signin/createUserSessionFromToken.ts"
+  },
+  "src/server/business/email-signin/index.ts": {
+    "mt": "Fri Aug 10 2018 18:43:22 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/src/server/business/email-signin/index.ts"
+  },
+  "src/server/business/email-signin/validate-email-signin-token.ts": {
+    "mt": "Sat Aug 11 2018 12:28:42 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/src/server/business/email-signin/validate-email-signin-token.ts"
+  },
+  "src/server/configure-session.ts": {
+    "mt": "Fri Aug 10 2018 15:31:51 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/src/server/configure-session.ts"
+  },
+  "src/server/controllers/email-signin-callback.test.ts": {
+    "mt": "Fri Aug 10 2018 15:17:59 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/src/server/controllers/email-signin-callback.test.ts"
+  },
+  "src/server/controllers/email-signin-callback.ts": {
+    "mt": "Fri Aug 10 2018 19:20:23 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/src/server/controllers/email-signin-callback.ts"
+  },
+  "src/server/controllers/home.test.ts": {
+    "mt": "Tue Aug 07 2018 20:53:42 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/src/server/controllers/home.test.ts"
+  },
+  "src/server/controllers/home.ts": {
+    "mt": "Sat Aug 11 2018 13:33:00 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/src/server/controllers/home.ts"
+  },
+  "src/server/db/bookshelf.ts": {
+    "mt": "Thu Aug 09 2018 19:04:32 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/src/server/db/bookshelf.ts"
+  },
+  "src/server/db/knex.ts": {
+    "mt": "Thu Aug 09 2018 20:55:43 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/src/server/db/knex.ts"
+  },
+  "src/server/db/models/email-signin.ts": {
+    "mt": "Fri Aug 10 2018 19:19:30 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/src/server/db/models/email-signin.ts"
+  },
+  "src/server/db/models/index.ts": {
+    "mt": "Fri Aug 10 2018 18:32:53 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/src/server/db/models/index.ts"
+  },
+  "src/server/db/models/user.ts": {
+    "mt": "Fri Aug 10 2018 18:53:23 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/src/server/db/models/user.ts"
+  },
+  "src/server/index.ts": {
+    "mt": "Thu Aug 09 2018 15:20:53 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/src/server/index.ts"
+  },
+  "src/server/server.ts": {
+    "mt": "Sat Aug 11 2018 12:46:59 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/src/server/server.ts"
+  },
+  "src/server/util/env.ts": {
+    "mt": "Sat Aug 11 2018 13:19:47 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/src/server/util/env.ts"
+  },
+  "src/server/util/logger.ts": {
+    "mt": "Tue Aug 07 2018 19:53:36 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/src/server/util/logger.ts"
+  },
+  "src/server/util/queue/index.ts": {
+    "mt": "Fri Aug 10 2018 12:39:43 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/src/server/util/queue/index.ts"
+  },
+  "src/server/util/queue/queue-job-type.ts": {
+    "mt": "Thu Aug 09 2018 20:11:57 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/src/server/util/queue/queue-job-type.ts"
+  },
+  "src/server/util/queue/queue.ts": {
+    "mt": "Sat Aug 11 2018 13:20:07 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/src/server/util/queue/queue.ts"
+  },
+  "src/server/worker.ts": {
+    "mt": "Fri Aug 10 2018 12:58:38 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/src/server/worker.ts"
+  },
+  "src/shared/config.ts": {
+    "mt": "Thu Aug 09 2018 16:29:10 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/src/shared/config.ts"
+  },
+  "src/shared/contract/EmailSigninToken.ts": {
+    "mt": "Thu Aug 09 2018 16:47:50 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/src/shared/contract/EmailSigninToken.ts"
+  },
+  "src/shared/contract/UserSession.ts": {
+    "mt": "Fri Aug 10 2018 18:39:12 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/src/shared/contract/UserSession.ts"
+  },
+  "src/shared/http-status-codes.ts": {
+    "mt": "Thu Aug 09 2018 18:45:15 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/src/shared/http-status-codes.ts"
+  },
+  "dist/public/css/main.css": {
+    "mt": "Sat Aug 11 2018 12:49:08 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/dist/public/css/main.css"
+  },
+  "knex/migrations/20180809154016_email-signin.js": {
+    "mt": "Fri Aug 10 2018 17:52:45 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/knex/migrations/20180809154016_email-signin.js"
+  },
+  "knex/migrations/20180810175259_user.js": {
+    "mt": "Fri Aug 10 2018 18:07:41 GMT+0200 (CEST)",
+    "exists": true,
+    "state": 3,
+    "path": "/Users/kimandersen/projects/ts-server/knex/migrations/20180810175259_user.js"
   }
 }

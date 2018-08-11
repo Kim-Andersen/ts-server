@@ -1,4 +1,4 @@
-import errorHandler from 'errorHandler';
+import errorHandler from 'errorhandler';
 
 import app from './app';
 import { validateEnvironment } from './util/env';
