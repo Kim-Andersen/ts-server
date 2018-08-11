@@ -26,13 +26,13 @@ const _Queue = {
 
     job
       .on('complete', (result: any) => {
-        logger.debug(`Job completed: ${type}`);
+        logger.info(`Job completed: ${type}`);
       })
       .on('failed', (errorMessage: any) => {
         logger.error(`Job failed: ${type}`, data, errorMessage);
       })
       .on('failed attempt', (errorMessage: any, doneAttempts: any) => {
-        logger.warn(
+        logger.alert(
           'Job attempt failed: ${type}',
           data,
           errorMessage,
