@@ -6,7 +6,7 @@ import lusca from 'lusca';
 import path from 'path';
 
 import apiRouter from './api/api-router';
-import configureSession from './configure-session';
+import configureSession from './config/configure-session';
 import emailSigninCallbackController from './controllers/email-signin-callback';
 import * as homeController from './controllers/home';
 import { PORT } from './util/env';
