@@ -1,4 +1,4 @@
-export default class MailMessage {
+export class MailMessage {
   constructor(
     public readonly to: string,
     public readonly from: string,

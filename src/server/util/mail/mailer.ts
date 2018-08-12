@@ -3,7 +3,7 @@ import Promise from 'bluebird';
 
 import { SENDGRID_API_KEY } from '../env';
 import logger from '../logger';
-import MailMessage from './MailMessage';
+import { MailMessage } from './types';
 
 sgMail.setApiKey(SENDGRID_API_KEY);
 
