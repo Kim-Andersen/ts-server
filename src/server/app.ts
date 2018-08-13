@@ -9,6 +9,7 @@ import apiRouter from './api/api-router';
 import configureSession from './config/configure-session';
 import emailSigninCallbackController from './controllers/email-signin-callback';
 import * as homeController from './controllers/home';
+import reactRenderer from './react-renderer';
 import { PORT } from './util/env';
 
 // import session from 'express-session';
@@ -140,6 +141,8 @@ app.get('/callback/email', emailSigninCallbackController);
 /**
  * API examples routes.
  */
+
+app.get('/app', reactRenderer);
 
 app.use(apiRouter);
 
