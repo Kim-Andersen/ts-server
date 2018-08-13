@@ -30,8 +30,6 @@ export default function createUserSessionFromToken(
         emailSigninModel.user().fetch({ require: true })
       )
       // Finally return a new UserSession.
-      .then(
-        (user: UserModel) => new UserSession(user, user.generateAuthToken())
-      )
+      .then((user: UserModel) => new UserSession(user))
   );
 }

@@ -1,3 +1,6 @@
+import jwt from 'jsonwebtoken';
+
+import { SESSION_SECRET } from '../../util/env';
 import bookshelf from '../bookshelf';
 import EmailSigninModel from './email-signin';
 
@@ -35,8 +38,7 @@ export default class UserModel extends bookshelf.Model<UserModel> {
     return this.get('updated_at');
   }
 
-  public generateAuthToken(): string {
-    // TODO: Generate some auth token.
-    return 'blaaaaaaaaaaaaaaaaah';
+  public generateJSONWebToken(): string {
+    return jwt.sign(this.toJSON(), SESSION_SECRET);
   }
 }

@@ -1,8 +1,8 @@
 import { UserModel } from '../../server/db/models';
 
 export class UserSession {
-  constructor(
-    public readonly user: UserModel,
-    public readonly authToken: string
-  ) {}
+  public readonly authToken: string;
+  constructor(public readonly user: UserModel) {
+    this.authToken = user.generateJSONWebToken();
+  }
 }
