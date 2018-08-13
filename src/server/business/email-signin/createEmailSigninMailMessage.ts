@@ -13,13 +13,13 @@ export function createEmailSigninMailMessage(
     ROOT_URL
   );
   const html = `
-      <a href="${signInUrl}">Sign in to [site name]</a>
+      <a href="${signInUrl}">Sign in to ${ROOT_URL}</a>
     `;
 
   return new MailMessage(
     user.email,
     user.email,
-    'Sign in to [site name]',
+    `Sign in to ${ROOT_URL}`,
     undefined,
     html
   );
