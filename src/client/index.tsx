@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Hello from '../shared/react/components/App';
+import UserSession from '../shared/contract/UserSession';
+import App from '../shared/react/components/App';
+
+const bootstrapData: { userSession: UserSession } = window['__bootstrapData'];
 
 ReactDOM.hydrate(
-  <Hello name="TypeScript" enthusiasmLevel={10} />,
+  <App email={bootstrapData.userSession.user.email} />,
   document.getElementById('root') as HTMLElement
 );

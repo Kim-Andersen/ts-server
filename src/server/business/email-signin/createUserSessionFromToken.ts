@@ -1,6 +1,6 @@
 import Promise from 'bluebird';
 
-import { UserSession } from '../../../shared/contract/UserSession';
+import UserSession from '../../../shared/contract/UserSession';
 import { UserModel } from '../../db/models';
 import EmailSigninModel from '../../db/models/email-signin';
 import logger from '../../util/logger';

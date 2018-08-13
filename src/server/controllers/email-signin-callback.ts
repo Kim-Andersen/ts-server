@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from 'express';
 
-import { UserSession } from '../../shared/contract/UserSession';
+import UserSession from '../../shared/contract/UserSession';
 import HttpStatusCode from '../../shared/http-status-codes';
 import EmailSignin from '../business/email-signin';
 import { EmailSigninModel } from '../db/models';
@@ -25,7 +25,9 @@ export default function emailSigninCallbackController(
 
   return EmailSignin.createUserSessionFromToken(token)
     .then((userSession: UserSession) => {
-      return res.status(200).json(userSession);
+      // Save the userSession to the session request and redirect to the react app.
+      req.session!.userSession = userSession;
+      return req.session!.save(() => res.redirect('/app'));
     })
     .catch(EmailSigninModel.NotFoundError, function emailSigninNotFound() {
       logger.info(`EmailSignin token not found`, { token });
