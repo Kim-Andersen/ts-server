@@ -95,7 +95,9 @@ app.use((req, res, next) => {
 // });
 
 app.use(
-  express.static(path.join(__dirname, 'public'), { maxAge: 31557600000 })
+  express.static(path.join(__dirname, '../../dist/public'), {
+    maxAge: 31557600000
+  })
 );
 
 /**
