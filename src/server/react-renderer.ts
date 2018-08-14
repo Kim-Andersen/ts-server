@@ -20,6 +20,7 @@ const html = ({
   <body style="margin:0">
     <div id="root">${body}</div>
   </body>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"></link>
   <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
   <script defer src="js/client.js" defer></script>
