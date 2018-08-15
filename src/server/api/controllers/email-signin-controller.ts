@@ -15,7 +15,9 @@ export const postEmailSignin = async (
 
   const validationErrors = req.validationErrors();
   if (validationErrors) {
-    return res.status(HttpStatusCode.BadRequest).send(validationErrors);
+    return res
+      .status(HttpStatusCode.UnprocessableEntity)
+      .send(validationErrors);
   }
 
   const email = req.body.email;
@@ -41,7 +43,7 @@ export const getValidateEmailSigninToken = (
 
   const validationErrors = req.validationErrors();
   if (validationErrors) {
-    res.status(HttpStatusCode.BadRequest).send(validationErrors);
+    res.status(HttpStatusCode.UnprocessableEntity).send(validationErrors);
   }
 
   const token = req.query.token;

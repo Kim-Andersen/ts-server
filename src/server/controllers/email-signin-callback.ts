@@ -18,7 +18,9 @@ export default function emailSigninCallbackController(
 
   const validationErrors = req.validationErrors();
   if (validationErrors) {
-    return res.status(HttpStatusCode.BadRequest).send(validationErrors);
+    return res
+      .status(HttpStatusCode.UnprocessableEntity)
+      .send(validationErrors);
   }
 
   const token = req.query.token;
