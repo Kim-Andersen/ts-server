@@ -39,7 +39,10 @@ export const getValidateEmailSigninToken = (
   res: Response,
   next: NextFunction
 ): void => {
-  req.assert('token', 'Token is not valid').isString();
+  req
+    .assert('token', 'Token is not valid')
+    .isString()
+    .isLength({ min: 10 });
 
   const validationErrors = req.validationErrors();
   if (validationErrors) {
