@@ -22,7 +22,6 @@ export default function App({ email }: Props) {
 
       <Input size="huge">
         <Dropdown
-          size="huge"
           placeholder="Select Friend"
           fluid
           selection
