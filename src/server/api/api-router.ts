@@ -1,11 +1,13 @@
 import bodyParser from 'body-parser';
 import compression from 'compression';
 import express, { Request, Response } from 'express';
+import jwt from 'express-jwt';
 import expressValidator from 'express-validator';
 import lusca from 'lusca';
 
+import { SESSION_SECRET } from '../util/env';
 import { getValidateEmailSigninToken, postEmailSignin } from './controllers/email-signin-controller';
-import { postCreateNewProject } from './controllers/me';
+import { postNewProject } from './controllers/me';
 
 // Configure the API router.
 const router = express.Router({ mergeParams: true });
@@ -20,7 +22,11 @@ router.use(lusca.xssProtection(true));
 router.post('/api/auth/email', postEmailSignin);
 router.get('/api/auth/email', getValidateEmailSigninToken);
 
-router.post('/api/me/projects', postCreateNewProject);
+router.post(
+  '/api/me/projects',
+  jwt({ secret: SESSION_SECRET }),
+  postNewProject
+);
 
 // Wildcard route catcher.
 router.all('*', function(req, res) {

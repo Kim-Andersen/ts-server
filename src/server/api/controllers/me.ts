@@ -6,12 +6,14 @@ import { createNewProject, NewProjectRequest } from '../../business/projects';
 import { ProjectModel } from '../../db/models';
 import logger from '../../util/logger';
 
-export const postCreateNewProject = async (
+export const postNewProject = async (
   req: Request,
   res: Response,
   next: NextFunction
 ) => {
-  body('title', 'Email is not valid')
+  console.log('req.user', req.user);
+
+  body('title', 'Title is not valid')
     .isString()
     .isLength({ min: 1, max: ProjectModel.MAX_TITLE_LENGTH });
   body('description', 'Description is not valid')
