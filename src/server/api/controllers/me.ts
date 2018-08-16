@@ -11,8 +11,6 @@ export const postNewProject = async (
   res: Response,
   next: NextFunction
 ) => {
-  console.log('req.user', req.user);
-
   body('title', 'Title is not valid')
     .isString()
     .isLength({ min: 1, max: ProjectModel.MAX_TITLE_LENGTH });
@@ -34,17 +32,17 @@ export const postNewProject = async (
   const newProjectRequest: NewProjectRequest = {
     title,
     description,
-    createdBy: 1 // TODO: !!!!!!!! req.session!.userSession.user.id
+    createdBy: req.user.id
   };
 
   logger.info('API creating new project', newProjectRequest);
 
   return createNewProject(newProjectRequest)
-    .then((project: ProjectModel) => {
-      return res.status(HttpStatusCode.OK).json({
+    .then((project: ProjectModel) =>
+      res.status(HttpStatusCode.Created).json({
         project: project.toJSON()
-      });
-    })
+      })
+    )
     .catch(function(err: any) {
       logger.error('API failed to create new project');
       return next(err);
