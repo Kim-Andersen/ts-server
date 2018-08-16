@@ -1,3 +1,4 @@
+import { GraphQLInt, GraphQLObjectType, GraphQLString } from 'graphql';
 import { camelCase, mapKeys, snakeCase } from 'lodash';
 
 import bookshelf from '../bookshelf';
@@ -5,6 +6,18 @@ import bookshelf from '../bookshelf';
 export default class ProjectModel extends bookshelf.Model<ProjectModel> {
   static MAX_TITLE_LENGTH = 100;
   static MAX_DESCRIPTION_LENGTH = 1000;
+
+  static graphQLObjectType: GraphQLObjectType = new GraphQLObjectType({
+    name: 'Project',
+    fields: {
+      id: { type: GraphQLInt },
+      title: { type: GraphQLString },
+      description: { type: GraphQLString },
+      createdAt: { type: GraphQLString },
+      updatedAt: { type: GraphQLString },
+      createdBy: { type: GraphQLInt }
+    }
+  });
 
   public parse(response: any) {
     return mapKeys(response, function(value, key) {

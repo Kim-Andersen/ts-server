@@ -5,7 +5,7 @@ import expressValidator from 'express-validator';
 import lusca from 'lusca';
 import path from 'path';
 
-import ApiRouter from './api/ApiRouter';
+import GraphQLRouter from './api/GraphQLRouter';
 import configureSession from './config/configure-session';
 import emailSigninCallbackController from './controllers/email-signin-callback';
 import * as homeController from './controllers/home';
@@ -148,7 +148,8 @@ app.get('/app', reactRenderer);
 
 // app.use(apiRouter);
 
-app.use('/api', ApiRouter.create().router);
+// app.use('/api', ApiRouter.create().router);
+app.use('/api/graphql', new GraphQLRouter().router);
 
 // app.get(
 //   '/api/facebook',

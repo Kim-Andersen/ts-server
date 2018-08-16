@@ -22,7 +22,9 @@
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
-    "jsx": "react"
+    "jsx": "react",
+    "skipLibCheck": true,
+    "lib": ["esnext"]
   },
   // "include": ["src/**/*"]
   "include": ["src/server/**/*", "src/shared/**/*"],
