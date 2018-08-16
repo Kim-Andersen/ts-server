@@ -23,8 +23,7 @@
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "jsx": "react",
-    "skipLibCheck": true,
-    "lib": ["esnext"]
+    "lib": ["esnext.asynciterable", "dom", "es2015"]
   },
   // "include": ["src/**/*"]
   "include": ["src/server/**/*", "src/shared/**/*"],

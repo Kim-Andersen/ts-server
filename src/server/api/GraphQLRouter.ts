@@ -83,7 +83,13 @@ export default class GraphQLRouter {
       '/',
       graphqlHTTP({
         schema: schema,
-        graphiql: false
+        graphiql: false,
+        formatError: error => ({
+          message: error.message,
+          locations: error.locations,
+          stack: error.stack ? error.stack.split('\n') : [],
+          path: error.path
+        })
       })
     );
 
@@ -91,7 +97,13 @@ export default class GraphQLRouter {
       '/',
       graphqlHTTP({
         schema: schema,
-        graphiql: true
+        graphiql: true,
+        formatError: error => ({
+          message: error.message,
+          locations: error.locations,
+          stack: error.stack ? error.stack.split('\n') : [],
+          path: error.path
+        })
       })
     );
     return router;
