@@ -27,11 +27,12 @@ export default class EmailSigninModel extends bookshelf.Model<
     return 'email_signin';
   }
   get hasTimestamps() {
-    return true;
+    // Rverride the default attribute names.
+    return ['createdAt', 'updatedAt'];
   }
 
   public get userId(): number {
-    return this.get('user_id');
+    return this.get('userId');
   }
 
   public get email(): string {
@@ -49,7 +50,7 @@ export default class EmailSigninModel extends bookshelf.Model<
   }
 
   public get createdAt(): Date {
-    return this.get('created_at');
+    return this.get('createdAt');
   }
   public set createdAt(created_at: Date) {
     this.set({ created_at });

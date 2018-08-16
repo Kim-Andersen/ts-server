@@ -1,4 +1,4 @@
-import { camelCase, isNumber, mapKeys, snakeCase } from 'lodash';
+import { isNumber } from 'lodash';
 
 import bookshelf from '../bookshelf';
 import ProjectModel from './ProjectModel';
@@ -13,9 +13,6 @@ export default class ProjectUserModel extends bookshelf.Model<
     super();
 
     this.on('saving', this.validate);
-
-    // this.projectId = projectId;
-    // this.userId = userId;
 
     this.set({ projectId, userId });
   }
@@ -33,23 +30,12 @@ export default class ProjectUserModel extends bookshelf.Model<
     }
   }
 
-  public parse(response: any) {
-    return mapKeys(response, function(value, key) {
-      return camelCase(key);
-    });
-  }
-
-  public format(attributes: any) {
-    return mapKeys(attributes, function(value, key) {
-      return snakeCase(key);
-    });
-  }
-
   get tableName() {
     return 'project_user';
   }
   get hasTimestamps() {
-    return true;
+    // Rverride the default attribute names.
+    return ['createdAt', 'updatedAt'];
   }
 
   public user() {

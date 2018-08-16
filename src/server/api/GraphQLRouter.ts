@@ -23,9 +23,9 @@ const queryType = new GraphQLObjectType({
         mine: { type: GraphQLBoolean }
       },
       resolve: (_, args: any, request: Request) => {
-        const whereFilter: { created_by?: number } = {};
+        const whereFilter: { createdBy?: number } = {};
         if (args.mine === true && request.session) {
-          whereFilter.created_by = 1;
+          whereFilter.createdBy = 1;
         }
         return new ProjectModel().where(whereFilter).fetchAll();
       }

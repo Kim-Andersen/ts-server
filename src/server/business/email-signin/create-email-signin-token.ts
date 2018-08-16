@@ -28,7 +28,7 @@ export default async function createEmailSigninToken(
       // Create new email signin record.
       .then(user =>
         new EmailSigninModel({
-          user_id: user.id,
+          userId: user.id,
           email,
           token: EmailSigninModel.generateRandomToken()
         })

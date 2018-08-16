@@ -22,11 +22,7 @@ router.use(lusca.xssProtection(true));
 router.post('/api/auth/email', postEmailSignin);
 router.get('/api/auth/email', getValidateEmailSigninToken);
 
-router.post(
-  '/api/me/projects',
-  jwt({ secret: SESSION_SECRET }),
-  postNewProject
-);
+router.post('/me/projects', jwt({ secret: SESSION_SECRET }), postNewProject);
 
 // 404 route catcher.
 router.all('*', function(req, res) {

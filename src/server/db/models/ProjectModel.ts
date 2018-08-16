@@ -1,5 +1,4 @@
 import { GraphQLInt, GraphQLObjectType, GraphQLString } from 'graphql';
-import { camelCase, mapKeys, snakeCase } from 'lodash';
 
 import bookshelf from '../bookshelf';
 
@@ -19,23 +18,13 @@ export default class ProjectModel extends bookshelf.Model<ProjectModel> {
     }
   });
 
-  public parse(response: any) {
-    return mapKeys(response, function(value, key) {
-      return camelCase(key);
-    });
-  }
-
-  public format(attributes: any) {
-    return mapKeys(attributes, function(value, key) {
-      return snakeCase(key);
-    });
-  }
-
   get tableName() {
     return 'project';
   }
+
   get hasTimestamps() {
-    return true;
+    // Rverride the default attribute names.
+    return ['createdAt', 'updatedAt'];
   }
 
   // public createdByUser() {

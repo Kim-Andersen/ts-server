@@ -9,7 +9,8 @@ export default class UserModel extends bookshelf.Model<UserModel> {
     return 'user';
   }
   get hasTimestamps() {
-    return true;
+    // Rverride the default attribute names.
+    return ['createdAt', 'updatedAt'];
   }
 
   public emailSignin() {
@@ -24,18 +25,18 @@ export default class UserModel extends bookshelf.Model<UserModel> {
   }
 
   public get lastLoginAt(): Date {
-    return this.get('last_login_at');
+    return this.get('lastLoginAt');
   }
-  public set lastLoginAt(last_login_at: Date) {
-    this.set({ last_login_at });
+  public set lastLoginAt(lastLoginAt: Date) {
+    this.set({ lastLoginAt });
   }
 
   public get createdAt(): Date {
-    return this.get('created_at');
+    return this.get('createdAt');
   }
 
   public get updatedAt(): Date {
-    return this.get('updated_at');
+    return this.get('updatedAt');
   }
 
   public generateJSONWebToken(): string {
