@@ -5,6 +5,7 @@ import express, { NextFunction, Request, Response, Router } from 'express';
 import lusca from 'lusca';
 
 import HttpStatusCode from '../../shared/http-status-codes';
+import { NODE_ENV } from '../util/env';
 import ApiBaseRoute from './ApiBaseRoute';
 
 class ProjectRoutes extends ApiBaseRoute {
@@ -63,7 +64,7 @@ export default class ApiRouter {
   }
 
   private errorHandler(): void {
-    this.router.use(errorHandler({ log: true }));
+    this.router.use(errorHandler({ log: NODE_ENV !== 'production' }));
     // this.router.use((err: Error, req: Request, res: Response) => {
     //   if (NODE_ENV !== 'production') {
     //     return res.status(500).json({
