@@ -5,7 +5,7 @@ import expressValidator from 'express-validator';
 import lusca from 'lusca';
 import path from 'path';
 
-import apiRouter from './api/api-router';
+import ApiRouter from './api/ApiRouter';
 import configureSession from './config/configure-session';
 import emailSigninCallbackController from './controllers/email-signin-callback';
 import * as homeController from './controllers/home';
@@ -146,7 +146,9 @@ app.get('/callback/email', emailSigninCallbackController);
 
 app.get('/app', reactRenderer);
 
-app.use(apiRouter);
+// app.use(apiRouter);
+
+app.use('/api', ApiRouter.create().router);
 
 // app.get(
 //   '/api/facebook',

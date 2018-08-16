@@ -28,7 +28,7 @@ router.post(
   postNewProject
 );
 
-// Wildcard route catcher.
+// 404 route catcher.
 router.all('*', function(req, res) {
   return res.status(404).json({ error: { error: 'Sorry, nothing here.' } });
 });
