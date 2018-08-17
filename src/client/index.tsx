@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 
 import UserSession from '../shared/contract/UserSession';
 import HttpStatusCode from '../shared/http-status-codes';
-import App from '../shared/react/components/App';
+import Router from '../shared/react/Router';
 
 interface Window {
   __bootstrapData: any;
@@ -52,6 +53,16 @@ function graphql(query: string, authToken: string): Promise<any> {
 const bootstrapData: { userSession: UserSession } = (window as any)
   .__bootstrapData;
 
+const { user } = bootstrapData.userSession;
+
+// const userProfile: IUserProfile = {
+//   userId: user.id,
+//   email: user.email,
+//   firstName: 'John',
+//   lastName: 'Doe',
+//   fullName: 'John Doe'
+// };
+
 graphql(
   `
     {
@@ -65,6 +76,10 @@ graphql(
 ).then(data => console.log(data));
 
 ReactDOM.hydrate(
-  <App email={bootstrapData.userSession.user.email} />,
+  <BrowserRouter>
+    <div>
+      <Router />
+    </div>
+  </BrowserRouter>,
   document.getElementById('root') as HTMLElement
 );

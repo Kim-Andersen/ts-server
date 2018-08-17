@@ -145,6 +145,19 @@ app.get('/callback/email', emailSigninCallbackController);
  * API examples routes.
  */
 
+app.get('/@:slug', function(req, res, next) {
+  const slug = (req.params['slug'] + '').toLowerCase();
+  if (slug.length === 0) {
+    return next();
+  } else {
+    reactRenderer(req, res);
+    // res.status(200).send(slug);
+  }
+});
+// app.get(/^@[a-z0-9]+(?:-[a-z0-9]+)*/i, function(req, res) {
+//   res.status(200).send(req.params['slug']);
+// });
+
 app.get('/app', reactRenderer);
 
 // app.use('/api', ApiRouter.create().router);

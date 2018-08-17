@@ -1,9 +1,10 @@
 import { Request, Response } from 'express';
 import React from 'react';
-import { renderToString } from 'react-dom/server';
+import ReactDOMServer from 'react-dom/server';
+import { StaticRouter } from 'react-router';
 
 import UserSession from '../shared/contract/UserSession';
-import App from '../shared/react/components/App';
+import Router from '../shared/react/Router';
 import logger from './util/logger';
 
 const html = ({
@@ -39,17 +40,39 @@ export default function reactRenderer(req: Request, res: Response) {
   }
 
   const userSession: UserSession = req.session.userSession;
+  const context = {};
 
-  const body = renderToString(
-    React.createElement(App, {
-      email: userSession.user.email
-    })
+  const body = ReactDOMServer.renderToString(
+    <StaticRouter location={req.url} context={context}>
+      <div>
+        <Router />
+        {/* <App email={userSession.user.email} />
+        <hr />
+        <UserProfile /> */}
+      </div>
+    </StaticRouter>
   );
 
-  res.send(
-    html({
-      body,
-      bootstrapData: JSON.stringify({ userSession })
-    })
-  );
+  if (context.url) {
+    res.writeHead(301, {
+      Location: context.url
+    });
+    res.end();
+  } else {
+    res
+      .send(
+        html({
+          body,
+          bootstrapData: JSON.stringify({ userSession })
+        })
+      )
+      .end();
+  }
+
+  // res.send(
+  //   html({
+  //     body,
+  //     bootstrapData: JSON.stringify({ userSession })
+  //   })
+  // );
 }
