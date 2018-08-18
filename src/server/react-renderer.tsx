@@ -1,4 +1,5 @@
 import { NextFunction, Request, Response } from 'express';
+import { Provider, useStaticRendering } from 'mobx-react';
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 import { StaticRouter, StaticRouterContext } from 'react-router';
@@ -8,14 +9,19 @@ import serialize from 'serialize-javascript';
 import UserSession from '../shared/contract/UserSession';
 import App from '../shared/react/components/App';
 import routes from '../shared/react/routes';
+import RootStore, { StoreState } from '../shared/web-app/store/RootStore';
+import { ROOT_URL } from './util/env';
 import logger from './util/logger';
+
+// https://github.com/mobxjs/mobx-react#server-side-rendering-with-usestaticrendering
+useStaticRendering(true);
 
 export default function reactRenderer(
   req: Request,
   res: Response,
   next: NextFunction
 ) {
-  logger.info('reactRenderer: url', req.url);
+  logger.info(`reactRenderer url: ${req.url}`);
 
   if (!req.session || !req.session.userSession) {
     return res.redirect('/login');
@@ -36,9 +42,24 @@ export default function reactRenderer(
     .then((data: any) => {
       const staticContext: StaticRouterContext = {};
 
+      const storeState: StoreState = {
+        uiStore: {
+          host: ROOT_URL,
+          session: {
+            apiJWT: userSession.authToken
+          }
+        },
+        userStore: {
+          userId: userSession.user.id,
+          email: userSession.user.email
+        }
+      };
+
       const markup = ReactDOMServer.renderToString(
         <StaticRouter location={req.url} context={staticContext}>
-          <App />
+          <Provider rootStore={RootStore.rehydrate(storeState)}>
+            <App />
+          </Provider>
         </StaticRouter>
       );
 
@@ -52,7 +73,9 @@ export default function reactRenderer(
           .send(
             renderHTML({
               markup,
-              bootstrapData: serialize({ userSession, data }, { isJSON: true })
+              bootstrapData: serialize(storeState, {
+                isJSON: true
+              })
             })
           )
           .end();
@@ -81,7 +104,7 @@ const renderHTML = ({
   <script defer src="js/client.js" defer></script>
 
   <script>
-    var __bootstrapData = ${bootstrapData};
+    var __bootstrapState = ${bootstrapData};
   </script>
 </html>
 `;

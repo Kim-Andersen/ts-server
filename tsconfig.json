@@ -23,7 +23,8 @@
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "jsx": "react",
-    "lib": ["esnext.asynciterable", "dom", "es2015"]
+    "lib": ["esnext.asynciterable", "dom", "es2015"],
+    "experimentalDecorators": true
   },
   // "include": ["src/**/*"]
   "include": ["src/server/**/*", "src/shared/**/*"],
