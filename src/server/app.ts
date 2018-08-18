@@ -145,15 +145,16 @@ app.get('/callback/email', emailSigninCallbackController);
  * API examples routes.
  */
 
-app.get('/@:slug', function(req, res, next) {
-  const slug = (req.params['slug'] + '').toLowerCase();
-  if (slug.length === 0) {
-    return next();
-  } else {
-    reactRenderer(req, res);
-    // res.status(200).send(slug);
-  }
-});
+// app.get('/@:slug', function(req, res, next) {
+//   const slug = (req.params['slug'] + '').toLowerCase();
+//   if (slug.length === 0) {
+//     return next();
+//   } else {
+//     reactRenderer(req, res);
+//     // res.status(200).send(slug);
+//   }
+// });
+
 // app.get(/^@[a-z0-9]+(?:-[a-z0-9]+)*/i, function(req, res) {
 //   res.status(200).send(req.params['slug']);
 // });
@@ -165,6 +166,10 @@ app.use('/api/graphql', new GraphQLRouter().router);
 
 // REST api.
 app.use('/api/rest', apiRouter);
+
+app.get('*', function(req, res, next) {
+  return reactRenderer(req, res, next);
+});
 
 // app.get(
 //   '/api/facebook',
