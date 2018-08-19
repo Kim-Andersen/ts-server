@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import UserProfile from './components/UserProfile';
+import PublicUserProfileContainer from './containers/PublicUserProfileContainer';
 
 const Home = () => <h1>Home</h1>;
 
@@ -18,7 +18,8 @@ const routes: IRouteConfig[] = [
   },
   {
     path: '/@:slug',
-    component: UserProfile
+    exact: true,
+    component: PublicUserProfileContainer
   }
 ];
 

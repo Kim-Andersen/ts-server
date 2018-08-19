@@ -11,7 +11,7 @@ import {
 } from 'graphql';
 
 import { createNewProject } from '../business/projects/createNewProject';
-import { ProjectModel } from '../db/models';
+import { ProjectModel, UserModel } from '../db/models';
 
 const mutationType = new GraphQLObjectType({
   name: 'Mutation',
@@ -48,14 +48,27 @@ const queryType = new GraphQLObjectType({
     projects: {
       type: new GraphQLList(ProjectModel.graphQLObjectType),
       args: {
-        mine: { type: GraphQLBoolean }
+        mine: { type: GraphQLBoolean },
+        userId: { type: GraphQLInt }
       },
       resolve: (_, args: any, request: Request) => {
         const whereFilter: { createdBy?: number } = {};
         if (args.mine === true && request.session) {
-          whereFilter.createdBy = 1;
+          whereFilter.createdBy = parseInt(request.session.id, 10);
+        } else if (args.userId) {
+          whereFilter.createdBy = args.userId;
         }
         return new ProjectModel().where(whereFilter).fetchAll();
+      }
+    },
+    user: {
+      type: UserModel.graphQLObjectType,
+      args: {
+        id: { type: GraphQLInt },
+        slug: { type: GraphQLString }
+      },
+      resolve: (_, args: any) => {
+        return new UserModel().where({ slug: args.slug }).fetch();
       }
     }
   }

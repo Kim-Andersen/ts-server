@@ -7,7 +7,6 @@ import api from '../shared/api';
 import App from '../shared/react/components/App';
 import RootStore from '../shared/web-app/store/RootStore';
 
-// import { graphql } from '../shared/api';
 interface Window {
   __bootstrapData: any;
 }

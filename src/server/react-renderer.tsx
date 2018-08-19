@@ -52,9 +52,6 @@ export default function reactRenderer(
     userStore: {
       userId: userSession.user.id,
       email: userSession.user.email
-    },
-    projectsStore: {
-      projects: []
     }
   };
   const rootStore = RootStore.rehydrate(defaultStoreState);

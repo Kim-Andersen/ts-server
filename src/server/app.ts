@@ -148,10 +148,18 @@ app.get('/callback/email', emailSigninCallbackController);
 // app.get('/@:slug', function(req, res, next) {
 //   const slug = (req.params['slug'] + '').toLowerCase();
 //   if (slug.length === 0) {
-//     return next();
+//     return res.status(404).send('User not found');
 //   } else {
-//     reactRenderer(req, res);
-//     // res.status(200).send(slug);
+//     return new UserModel()
+//       .where({ slug })
+//       .fetch({ require: false })
+//       .then((user?: UserModel) => {
+//         if (!user) {
+//           return res.status(404).send('User not found');
+//         } else {
+//           return res.status(200).send(renderPublicUserProfilePage(user));
+//         }
+//       });
 //   }
 // });
 

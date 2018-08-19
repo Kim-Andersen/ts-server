@@ -10,11 +10,10 @@ export interface ProjectsStoreState {
 // import UserSession from '../../contract/UserSession';
 export default class ProjectsStore {
   @observable
-  projects: PublicProject[] = [];
+  projects: PublicProject[];
 
-  constructor(state: ProjectsStoreState) {
-    console.log('ProjectsStore.constructor', state.projects.length);
-    this.projects = state.projects;
+  constructor(state?: ProjectsStoreState) {
+    this.projects = (state && state.projects) || [];
 
     autorun(() => {
       console.log('ProjectsStore.projects:', this.projects.length);

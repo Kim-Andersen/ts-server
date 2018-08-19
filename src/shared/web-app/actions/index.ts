@@ -1,17 +1,16 @@
-import RootStore from '../store/RootStore';
+import api from '../../api';
 
 export interface IActions {
-  fetchUserProfileBySlug: (rootStore: RootStore, slug: string) => Promise<any>;
+  fetchUserProfileBySlug: (slug: string) => Promise<any>;
   // fetchMyProjects: (rootStore: RootStore) => Promise<any>;
 }
 
 class Actions implements IActions {
-  public fetchUserProfileBySlug(
-    rootStore: RootStore,
-    slug: string
-  ): Promise<any> {
+  public fetchUserProfileBySlug(slug: string): Promise<any> {
     console.log('actions.fetchUserProfileBySlug', slug);
-    return Promise.resolve({ user: { fullName: 'Claus Riskjær' } });
+    return api
+      .query(`{ user(slug:"${slug}") { id, email, slug } }`)
+      .then(user => console.log('user', user));
   }
 
   // public fetchMyProjects(rootStore: RootStore): Promise<any> {

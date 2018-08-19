@@ -2,7 +2,8 @@ import { inject, observer } from 'mobx-react';
 import React from 'react';
 import { match } from 'react-router';
 
-import actions, { IActions } from '../../web-app/actions';
+import FetchInitialDataOptions from '../../contract/FetchInitialDataOptions';
+import actions from '../../web-app/actions';
 import RootStore from '../../web-app/store/RootStore';
 import Project from './Project';
 
@@ -43,17 +44,8 @@ class UserProfile extends React.Component<Props> {
       params
     });
 
-    return Promise.all([
-      actions.fetchUserProfileBySlug(rootStore, params.slug),
-      rootStore.projectsStore.fetch()
-    ]);
+    return Promise.all([rootStore.projectsStore.fetch()]);
   }
-}
-
-interface FetchInitialDataOptions {
-  params: any;
-  rootStore: RootStore;
-  actions: IActions;
 }
 
 export default UserProfile;
