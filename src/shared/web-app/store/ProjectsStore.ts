@@ -1,20 +1,16 @@
 import { autorun, observable } from 'mobx';
 
 import api from '../../api';
+import { PublicProject } from '../../contract/PublicProject';
 
 export interface ProjectsStoreState {
-  projects: Project[];
-}
-
-interface Project {
-  id: number;
-  title: string;
+  projects: PublicProject[];
 }
 
 // import UserSession from '../../contract/UserSession';
 export default class ProjectsStore {
   @observable
-  projects: Project[] = [];
+  projects: PublicProject[] = [];
 
   constructor(state: ProjectsStoreState) {
     console.log('ProjectsStore.constructor', state.projects.length);
@@ -25,7 +21,7 @@ export default class ProjectsStore {
     });
   }
 
-  public fetch(): Promise<Project[]> {
+  public fetch(): Promise<PublicProject[]> {
     return api
       .query(
         `
@@ -33,6 +29,7 @@ export default class ProjectsStore {
         projects {
           id
           title
+          description
         }
       }
     `

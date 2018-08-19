@@ -4,6 +4,7 @@ import { match } from 'react-router';
 
 import actions, { IActions } from '../../web-app/actions';
 import RootStore from '../../web-app/store/RootStore';
+import Project from './Project';
 
 interface MatchParams {
   slug: string;
@@ -23,13 +24,11 @@ class UserProfile extends React.Component<Props> {
     const { rootStore, match } = this.props;
 
     return (
-      <div>
-        <label>{rootStore.note}</label>
-        <h5>user profile for slug "{match.params.slug}"</h5>
-        <h1>{rootStore.userStore.email}</h1>
-
-        {this.props.rootStore.projectsStore.projects.map((project, idx) => (
-          <label key={idx}>{project.title}</label>
+      <div style={{ padding: 30 }}>
+        <h3>@{match.params.slug}</h3>
+        <hr />
+        {this.props.rootStore.projectsStore.projects.map(project => (
+          <Project project={project} key={project.id} />
         ))}
       </div>
     );
