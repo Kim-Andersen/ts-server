@@ -5,7 +5,6 @@ export interface UserStoreState {
   email: string;
 }
 
-// import UserSession from '../../contract/UserSession';
 export default class UIStateStore {
   public readonly userId: number;
 
@@ -16,7 +15,4 @@ export default class UIStateStore {
     this.userId = state.userId;
     this.email = state.email;
   }
-
-  // @observable
-  // public session?: UserSession;
 }

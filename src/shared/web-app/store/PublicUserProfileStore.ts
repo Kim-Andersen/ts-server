@@ -1,4 +1,4 @@
-import { observable, transaction } from 'mobx';
+import { action, observable, runInAction } from 'mobx';
 
 import api from '../../api';
 import { PublicProject } from '../../contract/PublicProject';
@@ -22,6 +22,7 @@ export default class PublicUserProfileStore {
     this.loading = false;
   }
 
+  @action
   public fetch(slug: string): Promise<any> {
     this.loading = true;
     return api
@@ -37,17 +38,18 @@ export default class PublicUserProfileStore {
       `
       )
       .then((data: { user?: any; projects?: PublicProject[] }) => {
-        transaction(() => {
+        return runInAction(() => {
           this.loading = false;
           this.user = data.user;
           this.projects = data.projects;
+          return this;
         });
-
-        return this;
       })
       .catch(err => {
         console.error(`Failed to fetch user by slug "${slug}".`, err);
-        this.loading = false;
+        runInAction(() => {
+          this.loading = false;
+        });
       });
   }
 }

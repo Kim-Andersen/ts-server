@@ -1,4 +1,4 @@
-import { autorun, observable } from 'mobx';
+import { autorun, observable, runInAction } from 'mobx';
 
 import api from '../../api';
 import { PublicProject } from '../../contract/PublicProject';
@@ -33,6 +33,6 @@ export default class ProjectsStore {
       }
     `
       )
-      .then(({ projects }) => (this.projects = projects));
+      .then(({ projects }) => runInAction(() => (this.projects = projects)));
   }
 }
