@@ -84,6 +84,10 @@ export default function reactRenderer(
         </StaticRouter>
       );
 
+      /**
+       * If staticContext.url is defined, we know the app redirected.
+       * https://reacttraining.com/react-router/web/guides/server-rendering
+       */
       if (staticContext.url) {
         res.writeHead(301, {
           Location: staticContext.url
