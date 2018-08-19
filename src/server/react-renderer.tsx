@@ -6,9 +6,12 @@ import { StaticRouter, StaticRouterContext } from 'react-router';
 import { matchPath } from 'react-router-dom';
 import serialize from 'serialize-javascript';
 
+import api from '../shared/api';
 import UserSession from '../shared/contract/UserSession';
+import HttpStatusCode from '../shared/http-status-codes';
 import App from '../shared/react/components/App';
 import routes from '../shared/react/routes';
+import actions from '../shared/web-app/actions';
 import RootStore, { StoreState } from '../shared/web-app/store/RootStore';
 import { ROOT_URL } from './util/env';
 import logger from './util/logger';
@@ -21,43 +24,64 @@ export default function reactRenderer(
   res: Response,
   next: NextFunction
 ) {
-  logger.info(`reactRenderer url: ${req.url}`);
+  logger.info(`reactRenderer url: ${req.url}`, req.path);
 
   if (!req.session || !req.session.userSession) {
     return res.redirect('/login');
   }
 
-  const userSession: UserSession = req.session.userSession;
+  const route = routes.find(route => matchPath(req.path, route) !== null);
+  const match = route && matchPath(req.path, route);
+  console.log('route', route);
+  console.log('match', match);
 
-  const activeRoute = routes.find(route => matchPath(req.url, route) !== null);
+  if (!route || !match) {
+    return res.status(HttpStatusCode.NotFound).send('Page not found');
+  }
 
-  console.log('activeRoute', activeRoute);
+  // Create the state.
+  const userSession: UserSession = req.session!.userSession;
+  const defaultStoreState: StoreState = {
+    uiStore: {
+      host: ROOT_URL,
+      graphqlApiURL: ROOT_URL + '/api/graphl',
+      session: {
+        apiJWT: userSession.authToken
+      }
+    },
+    userStore: {
+      userId: userSession.user.id,
+      email: userSession.user.email
+    },
+    projectsStore: {
+      projects: []
+    }
+  };
+  const rootStore = RootStore.rehydrate(defaultStoreState);
 
+  api.configure({
+    baseURL: rootStore.uiStore.host,
+    JWT: rootStore.uiStore.session.apiJWT,
+    graphqlApiURL: rootStore.uiStore.graphqlApiURL
+  });
+
+  // Load any initial data required by the component.
   const initialDataPromise =
-    activeRoute && activeRoute.component.fetchInitialData
-      ? activeRoute.component.fetchInitialData()
+    route.component && route.component.fetchInitialData
+      ? route.component.fetchInitialData({
+          params: match.params,
+          rootStore,
+          actions
+        })
       : Promise.resolve();
 
   initialDataPromise
-    .then((data: any) => {
+    .then(() => {
       const staticContext: StaticRouterContext = {};
-
-      const storeState: StoreState = {
-        uiStore: {
-          host: ROOT_URL,
-          session: {
-            apiJWT: userSession.authToken
-          }
-        },
-        userStore: {
-          userId: userSession.user.id,
-          email: userSession.user.email
-        }
-      };
 
       const markup = ReactDOMServer.renderToString(
         <StaticRouter location={req.url} context={staticContext}>
-          <Provider rootStore={RootStore.rehydrate(storeState)}>
+          <Provider rootStore={rootStore}>
             <App />
           </Provider>
         </StaticRouter>
@@ -73,7 +97,7 @@ export default function reactRenderer(
           .send(
             renderHTML({
               markup,
-              bootstrapData: serialize(storeState, {
+              bootstrapData: serialize(rootStore, {
                 isJSON: true
               })
             })

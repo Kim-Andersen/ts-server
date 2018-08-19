@@ -84,6 +84,7 @@ export default class GraphQLRouter {
       graphqlHTTP({
         schema: schema,
         graphiql: false,
+        pretty: true,
         formatError: error => ({
           message: error.message,
           locations: error.locations,

@@ -3,6 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 
+import api from '../shared/api';
 import App from '../shared/react/components/App';
 import RootStore from '../shared/web-app/store/RootStore';
 
@@ -18,22 +19,11 @@ onMobXError(error => console.error(`MobX error`, error));
 
 const rootStore: RootStore = RootStore.rehydrate(bootstrapState);
 
-setTimeout(() => {
-  // rootStore.userStore.email = 'sdfdsfsfsd';
-  rootStore.note = 'World';
-}, 2000);
-
-// graphql(
-//   `
-//     {
-//       projects {
-//         id
-//         title
-//       }
-//     }
-//   `,
-//   bootstrapData.userSession.authToken
-// ).then(data => console.log(data));
+api.configure({
+  baseURL: rootStore.uiStore.host,
+  JWT: rootStore.uiStore.session.apiJWT,
+  graphqlApiURL: rootStore.uiStore.graphqlApiURL
+});
 
 ReactDOM.hydrate(
   <BrowserRouter>
