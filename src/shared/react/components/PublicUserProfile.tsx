@@ -2,11 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import { PublicProject } from '../../contract/PublicProject';
+import { ProjectPatch } from '../../web-app/store/ProjectsStore';
 import Project from './Project';
 
 export interface Props {
   user: any;
   projects?: PublicProject[];
+  onPatchProject: (id: number, patch: ProjectPatch) => void;
 }
 
 class PublicUserProfile extends React.PureComponent<Props> {
@@ -21,7 +23,11 @@ class PublicUserProfile extends React.PureComponent<Props> {
         <hr />
         {projects &&
           projects.map(project => (
-            <Project project={project} key={project.id} />
+            <Project
+              project={project}
+              key={project.id}
+              onPatchProject={this.props.onPatchProject}
+            />
           ))}
       </div>
     );

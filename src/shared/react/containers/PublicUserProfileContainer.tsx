@@ -19,6 +19,11 @@ export interface Props {
 @inject('rootStore')
 @observer
 class PublicUserProfileContainer extends React.Component<Props> {
+  constructor(props: Props) {
+    super(props);
+    this.addProject = this.addProject.bind(this);
+  }
+
   render(): JSX.Element {
     console.log(this.props);
     const { publicUserProfileStore } = this.props.rootStore;
@@ -42,6 +47,7 @@ class PublicUserProfileContainer extends React.Component<Props> {
         <PublicUserProfile
           user={publicUserProfileStore.user}
           projects={publicUserProfileStore.projects}
+          onPatchProject={this.props.rootStore.projectsStore.patchProject}
         />
       );
     }
@@ -50,7 +56,14 @@ class PublicUserProfileContainer extends React.Component<Props> {
       <div style={{ padding: 30 }}>
         <h3>PublicUserProfileContainer</h3>
         {content}
+        <button onClick={this.addProject}>Click to add a project</button>
       </div>
+    );
+  }
+
+  addProject() {
+    this.props.rootStore.projectsStore.addProject(
+      'Some dummy project titleeeeeeeee'
     );
   }
 

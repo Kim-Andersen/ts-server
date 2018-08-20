@@ -21,12 +21,34 @@ const mutationType = new GraphQLObjectType({
       args: {
         title: {
           type: new GraphQLNonNull(GraphQLString)
+        },
+        description: {
+          type: new GraphQLNonNull(GraphQLString)
         }
       },
       resolve: (root, { title, description }) => {
         return createNewProject({ title, description, createdBy: 1 }).then(
           model => model.toJSON()
         );
+      }
+    },
+    patchProject: {
+      type: ProjectModel.graphQLObjectType,
+      args: {
+        id: {
+          type: new GraphQLNonNull(GraphQLInt)
+        },
+        title: {
+          type: GraphQLString
+        },
+        description: {
+          type: GraphQLString
+        }
+      },
+      resolve: (root, { id, title, description }) => {
+        return new ProjectModel({ id })
+          .save({ title, description }, { patch: true })
+          .then(model => model.toJSON());
       }
     }
   }
